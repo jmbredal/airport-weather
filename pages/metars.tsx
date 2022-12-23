@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Metar } from './interfaces/metar';
-import Button from '@mui/material/Button';
-import styles from '../styles/Metar.module.css'
+import { Card, Container, FormControlLabel, ToggleButtonGroup, ToggleButton } from '@mui/material';
+import styles from '../styles/Metars.module.css'
 
 type OrderBy = 'icao' | 'wind' | 'temp';
 
@@ -10,38 +10,61 @@ export default function Metars() {
   const [metars, setMetars] = useState<Metar[]>([]);
   const [orderBy, setOrderBy] = useState<OrderBy>('icao');
 
-    useEffect(() => {
+  const handleToggleChange = (event: any, value: any) => {
+    setOrderBy(value);
+  }
+
+  useEffect(() => {
     fetch('/api/metars')
       .then(res => res.json())
       .then(metars => setMetars(metars));
   }, []);
 
   const metarElements = metars.sort(getSortFunction(orderBy)).map(metar => {
-    return <section key={metar.icao}>
-      <header>s
-        <h1>{metar.icao}</h1>
+    const clouds = metar.clouds?.map(c => {
+      return c.code === 'CAVOK' ? 'No clouds' : `${c.text} ${c.meters} m`
+    }).join(', ');
+    const conditions = metar.conditions?.map(c => c.text).join(', ');
+
+    return <Card className={styles.card} variant='outlined' key={metar.icao}>
+      <header className={styles.header}>
+        <h1 className={styles.h1}>{metar.icao}</h1>
         <span>{metar.station.name}</span>
       </header>
 
       <div>
         <ul>
-          <li>Vind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</li>
+          {metar.wind && <li>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</li>}
           <li>Temp: {metar.temperature?.celsius}° C</li>
+          <li>Visibility: {metar.visibility?.meters} meter</li>
+          {clouds && <li>Clouds: {clouds}</li>}
+          {conditions && <li>Conditions: {conditions}</li>}
         </ul>
       </div>
-    </section>
+    </Card>
   });
 
   return (
-    <>
-      <>
-        <Button variant='contained' onClick={() => { setOrderBy('icao') }}>Icao</Button>
-        <Button variant='outlined' onClick={() => { setOrderBy('wind') }}>Vind</Button>
-        <Button onClick={() => { setOrderBy('temp') }}>Temp</Button>
-      </>
+    <Container className={styles.container} maxWidth={'sm'}>
+      <h1>Weather at Norwegian airports</h1>
+
+      <small>Sort: </small>
+      <ToggleButtonGroup
+        color="primary"
+        value={orderBy}
+        exclusive
+        onChange={handleToggleChange}
+        aria-label="Platform"
+      >
+        <ToggleButton value="icao">Icao</ToggleButton>
+        <ToggleButton value="temp">Temp</ToggleButton>
+        <ToggleButton value="wind">Wind</ToggleButton>
+      </ToggleButtonGroup>
+
+      <p></p>
 
       {metarElements}
-    </>
+    </Container>
   )
 }
 
@@ -57,7 +80,7 @@ function getSortFunction(key: OrderBy) {
       case 'temp':
         return a.temperature?.celsius - b.temperature.celsius;
       case 'wind':
-        return a.wind?.speed_mps - b.wind?.speed_mps;
+        return b.wind?.speed_mps - a.wind?.speed_mps;
     }
   }
 }
