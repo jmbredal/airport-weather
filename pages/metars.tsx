@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Metar } from './interfaces/metar';
+import Button from '@mui/material/Button';
+import styles from '../styles/Metar.module.css'
 
 type OrderBy = 'icao' | 'wind' | 'temp';
 
@@ -8,15 +10,15 @@ export default function Metars() {
   const [metars, setMetars] = useState<Metar[]>([]);
   const [orderBy, setOrderBy] = useState<OrderBy>('icao');
 
-  useEffect(() => {
+    useEffect(() => {
     fetch('/api/metars')
       .then(res => res.json())
       .then(metars => setMetars(metars));
   }, []);
 
   const metarElements = metars.sort(getSortFunction(orderBy)).map(metar => {
-    return <section id={metar.icao}>
-      <header>
+    return <section key={metar.icao}>
+      <header>s
         <h1>{metar.icao}</h1>
         <span>{metar.station.name}</span>
       </header>
@@ -33,9 +35,9 @@ export default function Metars() {
   return (
     <>
       <>
-        <button onClick={() => { setOrderBy('icao') }}>Icao</button>
-        <button onClick={() => { setOrderBy('wind') }}>Vind</button>
-        <button onClick={() => { setOrderBy('temp') }}>Temp</button>
+        <Button variant='contained' onClick={() => { setOrderBy('icao') }}>Icao</Button>
+        <Button variant='outlined' onClick={() => { setOrderBy('wind') }}>Vind</Button>
+        <Button onClick={() => { setOrderBy('temp') }}>Temp</Button>
       </>
 
       {metarElements}

@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import Metars from './metars'
+import Switch from "@mui/material/Switch";
 
-const inter = Inter({ subsets: ['latin'] })
+const label = { inputProps: { "aria-label": "Switch demo" } };
 
 export default function Home() {
   return (
     <>
-      <Metars />     
+      <Switch {...label} defaultChecked />
+      <Switch {...label} />
+      <Switch {...label} disabled defaultChecked />
+      <Metars />
     </>
   )
 }
