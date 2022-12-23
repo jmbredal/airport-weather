@@ -1,7 +1,7 @@
+import { Card, Container, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { Metar } from './interfaces/metar';
-import { Card, Container, FormControlLabel, ToggleButtonGroup, ToggleButton } from '@mui/material';
-import styles from '../styles/Metars.module.css'
+import { Metar } from '../interfaces/metar';
+import styles from '../styles/Metars.module.css';
 
 type OrderBy = 'icao' | 'wind' | 'temp';
 
