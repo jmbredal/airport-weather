@@ -1,0 +1,3615 @@
+[
+  {
+    "barometer": {
+      "hg": 29.65,
+      "hpa": 1004,
+      "kpa": 100.39,
+      "mb": 1003.92
+    },
+    "ceiling": {
+      "base_feet_agl": 5500,
+      "base_meters_agl": 1676,
+      "code": "BKN",
+      "feet": 5500,
+      "meters": 1676,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 3200,
+        "base_meters_agl": 975,
+        "code": "SCT",
+        "feet": 3200,
+        "meters": 975,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 5500,
+        "base_meters_agl": 1676,
+        "code": "BKN",
+        "feet": 5500,
+        "meters": 1676,
+        "text": "Broken"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -5,
+      "fahrenheit": 23
+    },
+    "elevation": {
+      "feet": 69,
+      "meters": 21
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 60
+    },
+    "icao": "ENAL",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENAL 231320Z 31013KT 9999 SCT032 BKN055 02/M05 Q1004",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          6.1197,
+          62.5625
+        ],
+        "type": "Point"
+      },
+      "location": "Ålesund, NO",
+      "name": "Ålesund Airport, Vigra",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 2,
+      "fahrenheit": 36
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 310,
+      "speed_kph": 24,
+      "speed_kts": 13,
+      "speed_mph": 15,
+      "speed_mps": 7
+    },
+    "windchill": {
+      "celsius": -3,
+      "fahrenheit": 27
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.11,
+      "hpa": 986,
+      "kpa": 98.59,
+      "mb": 985.92
+    },
+    "ceiling": {
+      "base_feet_agl": 0,
+      "base_meters_agl": 0,
+      "code": "OVX",
+      "feet": 0,
+      "meters": 0,
+      "text": "Vertical visibility"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 0,
+        "base_meters_agl": 0,
+        "code": "OVX",
+        "feet": 0,
+        "meters": 0,
+        "text": "Vertical visibility"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SN",
+        "text": "Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "elevation": {
+      "feet": 43,
+      "meters": 13
+    },
+    "flight_category": "LIFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENAN",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENAN 231320Z 01009KT 0500 SN VV009 M01/M02 Q0986",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          16.144199,
+          69.292503
+        ],
+        "type": "Point"
+      },
+      "location": "Andenes, NO",
+      "name": "Andøya Airport, Andenes",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "visibility": {
+      "meters": "500",
+      "meters_float": 500,
+      "miles": "0.31",
+      "miles_float": 0.31,
+      "vertical": {
+        "feet": 900,
+        "meters": 274
+      }
+    },
+    "wind": {
+      "degrees": 10,
+      "speed_kph": 17,
+      "speed_kts": 9,
+      "speed_mph": 10,
+      "speed_mps": 5
+    },
+    "windchill": {
+      "celsius": -6,
+      "fahrenheit": 21
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.11,
+      "hpa": 986,
+      "kpa": 98.59,
+      "mb": 985.92
+    },
+    "clouds": [
+      {
+        "code": "CAVOK",
+        "text": "Clear skies"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -14,
+      "fahrenheit": 7
+    },
+    "elevation": {
+      "feet": 10,
+      "meters": 3
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 85
+    },
+    "icao": "ENAT",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENAT 231320Z 21006KT 160V230 CAVOK M12/M14 Q0986 RMK WIND 700FT 19010KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          23.3717,
+          69.976097
+        ],
+        "type": "Point"
+      },
+      "location": "Alta, NO",
+      "name": "Alta Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -12,
+      "fahrenheit": 10
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 210,
+      "speed_kph": 11,
+      "speed_kts": 6,
+      "speed_mph": 7,
+      "speed_mps": 3
+    },
+    "windchill": {
+      "celsius": -18,
+      "fahrenheit": -1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.65,
+      "hpa": 1004,
+      "kpa": 100.39,
+      "mb": 1003.92
+    },
+    "ceiling": {
+      "base_feet_agl": 0,
+      "base_meters_agl": 0,
+      "code": "OVX",
+      "feet": 0,
+      "meters": 0,
+      "text": "Vertical visibility"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 0,
+        "base_meters_agl": 0,
+        "code": "OVX",
+        "feet": 0,
+        "meters": 0,
+        "text": "Vertical visibility"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -4,
+      "fahrenheit": 25
+    },
+    "elevation": {
+      "feet": 1027,
+      "meters": 313
+    },
+    "flight_category": "LIFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENBL",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENBL 231320Z 29001KT 6000 3000W -SHSN VV015 M03/M04 Q1004",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          5.75694,
+          61.391102
+        ],
+        "type": "Point"
+      },
+      "location": "Førde, NO",
+      "name": "Førde Airport, Bringeland",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -3,
+      "fahrenheit": 27
+    },
+    "visibility": {
+      "meters": "6,000",
+      "meters_float": 6000,
+      "miles": "3.73",
+      "miles_float": 3.73,
+      "vertical": {
+        "feet": 1500,
+        "meters": 457
+      }
+    },
+    "wind": {
+      "degrees": 290,
+      "speed_kph": 2,
+      "speed_kts": 1,
+      "speed_mph": 1,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.35,
+      "hpa": 994,
+      "kpa": 99.39,
+      "mb": 993.92
+    },
+    "ceiling": {
+      "base_feet_agl": 2000,
+      "base_meters_agl": 610,
+      "code": "BKN",
+      "feet": 2000,
+      "meters": 610,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1000,
+        "base_meters_agl": 305,
+        "code": "FEW",
+        "feet": 1000,
+        "meters": 305,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 2000,
+        "base_meters_agl": 610,
+        "code": "BKN",
+        "feet": 2000,
+        "meters": 610,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SH",
+        "prefix": "VC",
+        "text": "Area Showers"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "elevation": {
+      "feet": 10,
+      "meters": 3
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 75
+    },
+    "icao": "ENBN",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENBN 231320Z 29016KT 260V320 9999 VCSH FEW010CB BKN020 02/M02 Q0994",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          12.2175,
+          65.461098
+        ],
+        "type": "Point"
+      },
+      "location": "Brønnøy, NO",
+      "name": "Brønnøysund Airport, Brønnøy",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 2,
+      "fahrenheit": 36
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 290,
+      "speed_kph": 30,
+      "speed_kts": 16,
+      "speed_mph": 18,
+      "speed_mps": 8
+    },
+    "windchill": {
+      "celsius": -3,
+      "fahrenheit": 26
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.2,
+      "hpa": 989,
+      "kpa": 98.89,
+      "mb": 988.92
+    },
+    "ceiling": {
+      "base_feet_agl": 1800,
+      "base_meters_agl": 549,
+      "code": "BKN",
+      "feet": 1800,
+      "meters": 549,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 600,
+        "base_meters_agl": 183,
+        "code": "FEW",
+        "feet": 600,
+        "meters": 183,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 1800,
+        "base_meters_agl": 549,
+        "code": "BKN",
+        "feet": 1800,
+        "meters": 549,
+        "text": "Broken"
+      },
+      {
+        "base_feet_agl": 3000,
+        "base_meters_agl": 914,
+        "code": "BKN",
+        "feet": 3000,
+        "meters": 914,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "elevation": {
+      "feet": 43,
+      "meters": 13
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 81
+    },
+    "icao": "ENBO",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENBO 231320Z 32022KT 9999 4000E -SHSN FEW006 BKN018 BKN030 02/M01 Q0989 TEMPO 33025G35KT 1000 SHSN VV008",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          14.3653,
+          67.269203
+        ],
+        "type": "Point"
+      },
+      "location": "Bodø, NO",
+      "name": "Bodø Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 2,
+      "fahrenheit": 36
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 320,
+      "speed_kph": 41,
+      "speed_kts": 22,
+      "speed_mph": 25,
+      "speed_mps": 11
+    },
+    "windchill": {
+      "celsius": -4,
+      "fahrenheit": 24
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.68,
+      "hpa": 1005,
+      "kpa": 100.49,
+      "mb": 1004.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1000,
+        "base_meters_agl": 305,
+        "code": "FEW",
+        "feet": 1000,
+        "meters": 305,
+        "text": "Few"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "elevation": {
+      "feet": 161,
+      "meters": 49
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 87
+    },
+    "icao": "ENBR",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENBR 231320Z VRB03KT 9999 FEW010CB M00/M02 Q1005 NOSIG RMK WIND 1200FT 03007KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          5.21814,
+          60.2934
+        ],
+        "type": "Point"
+      },
+      "location": "Bergen, NO",
+      "name": "Bergen Airport, Flesland",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 6,
+      "speed_kts": 3,
+      "speed_mph": 3,
+      "speed_mps": 2
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.06,
+      "hpa": 984,
+      "kpa": 98.39,
+      "mb": 983.92
+    },
+    "ceiling": {
+      "base_feet_agl": 2400,
+      "base_meters_agl": 732,
+      "code": "BKN",
+      "feet": 2400,
+      "meters": 732,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1700,
+        "base_meters_agl": 518,
+        "code": "FEW",
+        "feet": 1700,
+        "meters": 518,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 2400,
+        "base_meters_agl": 732,
+        "code": "BKN",
+        "feet": 2400,
+        "meters": 732,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SN",
+        "prefix": "-",
+        "text": "Light Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -7,
+      "fahrenheit": 19
+    },
+    "elevation": {
+      "feet": 472,
+      "meters": 144
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 86
+    },
+    "icao": "ENBS",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENBS 231320Z VRB02KT 8000 -SN FEW017 BKN024 M05/M07 Q0984",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          29.691401,
+          70.600502
+        ],
+        "type": "Point"
+      },
+      "location": "Båtsfjord, NO",
+      "name": "Båtsfjord Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -5,
+      "fahrenheit": 23
+    },
+    "visibility": {
+      "meters": "8,000",
+      "meters_float": 8000,
+      "miles": "4.97",
+      "miles_float": 4.97
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 4,
+      "speed_kts": 2,
+      "speed_mph": 2,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.11,
+      "hpa": 986,
+      "kpa": 98.59,
+      "mb": 985.92
+    },
+    "ceiling": {
+      "base_feet_agl": 2100,
+      "base_meters_agl": 640,
+      "code": "BKN",
+      "feet": 2100,
+      "meters": 640,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2100,
+        "base_meters_agl": 640,
+        "code": "BKN",
+        "feet": 2100,
+        "meters": 640,
+        "text": "Broken"
+      },
+      {
+        "base_feet_agl": 8000,
+        "base_meters_agl": 2438,
+        "code": "OVC",
+        "feet": 8000,
+        "meters": 2438,
+        "text": "Overcast"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -8,
+      "fahrenheit": 18
+    },
+    "elevation": {
+      "feet": 43,
+      "meters": 13
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 74
+    },
+    "icao": "ENBV",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENBV 231320Z AUTO 15008KT 9999 BKN021 OVC080 M04/M08 Q0986",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          29.034201,
+          70.871399
+        ],
+        "type": "Point"
+      },
+      "location": "Berlevåg, NO",
+      "name": "Berlevåg Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -4,
+      "fahrenheit": 25
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 150,
+      "speed_kph": 15,
+      "speed_kts": 8,
+      "speed_mph": 9,
+      "speed_mps": 4
+    },
+    "windchill": {
+      "celsius": -9,
+      "fahrenheit": 16
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.65,
+      "hpa": 1004,
+      "kpa": 100.39,
+      "mb": 1003.92
+    },
+    "clouds": [
+      {
+        "code": "CAVOK",
+        "text": "Clear skies"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -4,
+      "fahrenheit": 25
+    },
+    "elevation": {
+      "feet": 56,
+      "meters": 17
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 86
+    },
+    "icao": "ENCN",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENCN 231320Z 07004KT CAVOK M02/M04 Q1004",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          8.08537,
+          58.204201
+        ],
+        "type": "Point"
+      },
+      "location": "Kjevik, NO",
+      "name": "Kristiansand Airport, Kjevik",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 70,
+      "speed_kph": 7,
+      "speed_kts": 4,
+      "speed_mph": 5,
+      "speed_mps": 2
+    },
+    "windchill": {
+      "celsius": -6,
+      "fahrenheit": 22
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.08,
+      "hpa": 985,
+      "kpa": 98.49,
+      "mb": 984.92
+    },
+    "ceiling": {
+      "base_feet_agl": 3000,
+      "base_meters_agl": 914,
+      "code": "BKN",
+      "feet": 3000,
+      "meters": 914,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1000,
+        "base_meters_agl": 305,
+        "code": "FEW",
+        "feet": 1000,
+        "meters": 305,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 1800,
+        "base_meters_agl": 549,
+        "code": "SCT",
+        "feet": 1800,
+        "meters": 549,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 3000,
+        "base_meters_agl": 914,
+        "code": "BKN",
+        "feet": 3000,
+        "meters": 914,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -10,
+      "fahrenheit": 14
+    },
+    "elevation": {
+      "feet": 213,
+      "meters": 65
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 86
+    },
+    "icao": "ENDU",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENDU 231320Z 00000KT 9999 -SHSN FEW010 SCT018 BKN030 M08/M10 Q0985 NOSIG RMK WIND 1100FT 30004KT WIND 2200FT 32007KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          18.5404,
+          69.055801
+        ],
+        "type": "Point"
+      },
+      "location": "Målselv, NO",
+      "name": "Bardufoss Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -8,
+      "fahrenheit": 18
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.08,
+      "hpa": 985,
+      "kpa": 98.49,
+      "mb": 984.92
+    },
+    "ceiling": {
+      "base_feet_agl": 4200,
+      "base_meters_agl": 1280,
+      "code": "BKN",
+      "feet": 4200,
+      "meters": 1280,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1500,
+        "base_meters_agl": 457,
+        "code": "FEW",
+        "feet": 1500,
+        "meters": 457,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 2500,
+        "base_meters_agl": 762,
+        "code": "SCT",
+        "feet": 2500,
+        "meters": 762,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 4200,
+        "base_meters_agl": 1280,
+        "code": "BKN",
+        "feet": 4200,
+        "meters": 1280,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SH",
+        "prefix": "VC",
+        "text": "Area Showers"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -4,
+      "fahrenheit": 25
+    },
+    "elevation": {
+      "feet": 85,
+      "meters": 26
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENEV",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENEV 231320Z VRB01KT 9999 VCSH FEW015 SCT025 BKN042 M03/M04 Q0985 RMK WIND 1400FT 29014KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          16.678101,
+          68.491302
+        ],
+        "type": "Point"
+      },
+      "location": "Evenes, NO",
+      "name": "Harstad/Narvik Airport, Evenes",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -3,
+      "fahrenheit": 27
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 2,
+      "speed_kts": 1,
+      "speed_mph": 1,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.68,
+      "hpa": 1005,
+      "kpa": 100.49,
+      "mb": 1004.92
+    },
+    "ceiling": {
+      "base_feet_agl": 4200,
+      "base_meters_agl": 1280,
+      "code": "BKN",
+      "feet": 4200,
+      "meters": 1280,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 700,
+        "base_meters_agl": 213,
+        "code": "FEW",
+        "feet": 700,
+        "meters": 213,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 3300,
+        "base_meters_agl": 1006,
+        "code": "SCT",
+        "feet": 3300,
+        "meters": 1006,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 4200,
+        "base_meters_agl": 1280,
+        "code": "BKN",
+        "feet": 4200,
+        "meters": 1280,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "elevation": {
+      "feet": 3,
+      "meters": 1
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENFL",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENFL 231320Z 07004KT 040V110 9999 -SHSN FEW007 SCT033 BKN042 01/M00 Q1005",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          5.02472,
+          61.583599
+        ],
+        "type": "Point"
+      },
+      "location": "Florø, NO",
+      "name": "Florø Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 1,
+      "fahrenheit": 34
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 70,
+      "speed_kph": 7,
+      "speed_kts": 4,
+      "speed_mph": 5,
+      "speed_mps": 2
+    },
+    "windchill": {
+      "celsius": -2,
+      "fahrenheit": 29
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.59,
+      "hpa": 1002,
+      "kpa": 100.19,
+      "mb": 1001.92
+    },
+    "clouds": [
+      {
+        "code": "CAVOK",
+        "text": "Clear skies"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -10,
+      "fahrenheit": 14
+    },
+    "elevation": {
+      "feet": 669,
+      "meters": 204
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 86
+    },
+    "icao": "ENGM",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENGM 231320Z 35005KT CAVOK M08/M10 Q1002 NOSIG",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          11.1004,
+          60.193901
+        ],
+        "type": "Point"
+      },
+      "location": "Oslo, NO",
+      "name": "Oslo Airport, Gardermoen",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -8,
+      "fahrenheit": 18
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 350,
+      "speed_kph": 9,
+      "speed_kts": 5,
+      "speed_mph": 6,
+      "speed_mps": 3
+    },
+    "windchill": {
+      "celsius": -12,
+      "fahrenheit": 10
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.68,
+      "hpa": 1005,
+      "kpa": 100.49,
+      "mb": 1004.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2500,
+        "base_meters_agl": 762,
+        "code": "FEW",
+        "feet": 2500,
+        "meters": 762,
+        "text": "Few"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "elevation": {
+      "feet": 72,
+      "meters": 22
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 75
+    },
+    "icao": "ENHD",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENHD 231320Z 05003KT 9999 FEW025 02/M02 Q1005",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          5.20836,
+          59.345299
+        ],
+        "type": "Point"
+      },
+      "location": "Karmøy, NO",
+      "name": "Haugesund Airport, Karmøy",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 2,
+      "fahrenheit": 36
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 50,
+      "speed_kph": 6,
+      "speed_kts": 3,
+      "speed_mph": 3,
+      "speed_mps": 2
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.06,
+      "hpa": 984,
+      "kpa": 98.39,
+      "mb": 983.92
+    },
+    "clouds": [
+      {
+        "code": "CAVOK",
+        "text": "Clear skies"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -10,
+      "fahrenheit": 14
+    },
+    "elevation": {
+      "feet": 259,
+      "meters": 79
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 79
+    },
+    "icao": "ENHF",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENHF 231320Z 00000KT CAVOK M07/M10 Q0984 RMK WIND 1254FT VRB02KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          23.6686,
+          70.679703
+        ],
+        "type": "Point"
+      },
+      "location": "Hammerfest, NO",
+      "name": "Hammerfest Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -7,
+      "fahrenheit": 19
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.06,
+      "hpa": 984,
+      "kpa": 98.39,
+      "mb": 983.92
+    },
+    "ceiling": {
+      "base_feet_agl": 1500,
+      "base_meters_agl": 457,
+      "code": "OVC",
+      "feet": 1500,
+      "meters": 457,
+      "text": "Overcast"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1500,
+        "base_meters_agl": 457,
+        "code": "OVC",
+        "feet": 1500,
+        "meters": 457,
+        "text": "Overcast"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -6,
+      "fahrenheit": 21
+    },
+    "elevation": {
+      "feet": 20,
+      "meters": 6
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 80
+    },
+    "icao": "ENHK",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENHK 231320Z AUTO 09003KT 040V170 9999 OVC015 M03/M06 Q0984",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          22.1397,
+          70.486702
+        ],
+        "type": "Point"
+      },
+      "location": "Hasvik, NO",
+      "name": "Hasvik Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -3,
+      "fahrenheit": 27
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 90,
+      "speed_kph": 6,
+      "speed_kts": 3,
+      "speed_mph": 3,
+      "speed_mps": 2
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.08,
+      "hpa": 985,
+      "kpa": 98.49,
+      "mb": 984.92
+    },
+    "ceiling": {
+      "base_feet_agl": 1200,
+      "base_meters_agl": 366,
+      "code": "BKN",
+      "feet": 1200,
+      "meters": 366,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1200,
+        "base_meters_agl": 366,
+        "code": "BKN",
+        "feet": 1200,
+        "meters": 366,
+        "text": "Broken"
+      },
+      {
+        "base_feet_agl": 1900,
+        "base_meters_agl": 579,
+        "code": "OVC",
+        "feet": 1900,
+        "meters": 579,
+        "text": "Overcast"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SN",
+        "prefix": "-",
+        "text": "Light Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -5,
+      "fahrenheit": 23
+    },
+    "elevation": {
+      "feet": 43,
+      "meters": 13
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 86
+    },
+    "icao": "ENHV",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENHV 231320Z AUTO 23004KT 9000 -SN BKN012/// OVC019/// M03/M05 Q0985 RESG",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          25.983601,
+          71.009697
+        ],
+        "type": "Point"
+      },
+      "location": "Honningsvåg, NO",
+      "name": "Honningsvåg Airport, Valan",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -3,
+      "fahrenheit": 27
+    },
+    "visibility": {
+      "meters": "9,000",
+      "meters_float": 9000,
+      "miles": "5.59",
+      "miles_float": 5.59
+    },
+    "wind": {
+      "degrees": 230,
+      "speed_kph": 7,
+      "speed_kts": 4,
+      "speed_mph": 5,
+      "speed_mps": 2
+    },
+    "windchill": {
+      "celsius": -6,
+      "fahrenheit": 21
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.59,
+      "hpa": 1002,
+      "kpa": 100.19,
+      "mb": 1001.92
+    },
+    "ceiling": {
+      "base_feet_agl": 3000,
+      "base_meters_agl": 914,
+      "code": "BKN",
+      "feet": 3000,
+      "meters": 914,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 600,
+        "base_meters_agl": 183,
+        "code": "FEW",
+        "feet": 600,
+        "meters": 183,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 1700,
+        "base_meters_agl": 518,
+        "code": "SCT",
+        "feet": 1700,
+        "meters": 518,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 3000,
+        "base_meters_agl": 914,
+        "code": "BKN",
+        "feet": 3000,
+        "meters": 914,
+        "text": "Broken"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "elevation": {
+      "feet": 203,
+      "meters": 62
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENKB",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENKB 231320Z 29004KT 260V320 9999 FEW006 SCT017 BKN030 M01/M02 Q1002 RMK WIND 745FT 28010KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          7.82452,
+          63.111801
+        ],
+        "type": "Point"
+      },
+      "location": "Kvernberget, NO",
+      "name": "Kristiansund Airport, Kvernberget",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 290,
+      "speed_kph": 7,
+      "speed_kts": 4,
+      "speed_mph": 5,
+      "speed_mps": 2
+    },
+    "windchill": {
+      "celsius": -4,
+      "fahrenheit": 25
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.08,
+      "hpa": 985,
+      "kpa": 98.49,
+      "mb": 984.92
+    },
+    "ceiling": {
+      "base_feet_agl": 1400,
+      "base_meters_agl": 427,
+      "code": "BKN",
+      "feet": 1400,
+      "meters": 427,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 200,
+        "base_meters_agl": 61,
+        "code": "FEW",
+        "feet": 200,
+        "meters": 61,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 700,
+        "base_meters_agl": 213,
+        "code": "SCT",
+        "feet": 700,
+        "meters": 213,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 1400,
+        "base_meters_agl": 427,
+        "code": "BKN",
+        "feet": 1400,
+        "meters": 427,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SN",
+        "prefix": "-",
+        "text": "Light Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -11,
+      "fahrenheit": 12
+    },
+    "elevation": {
+      "feet": 282,
+      "meters": 86
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 92
+    },
+    "icao": "ENKR",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENKR 231320Z 17006KT 8000 -SN FEW002 SCT007 BKN014 M10/M11 Q0985 RMK WIND 731FT 12005KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          29.8913,
+          69.7258
+        ],
+        "type": "Point"
+      },
+      "location": "Kirkenes, NO",
+      "name": "Kirkenes Airport, Høybuktmoen",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -10,
+      "fahrenheit": 14
+    },
+    "visibility": {
+      "meters": "8,000",
+      "meters_float": 8000,
+      "miles": "4.97",
+      "miles_float": 4.97
+    },
+    "wind": {
+      "degrees": 170,
+      "speed_kph": 11,
+      "speed_kts": 6,
+      "speed_mph": 7,
+      "speed_mps": 3
+    },
+    "windchill": {
+      "celsius": -16,
+      "fahrenheit": 4
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.2,
+      "hpa": 989,
+      "kpa": 98.89,
+      "mb": 988.92
+    },
+    "ceiling": {
+      "base_feet_agl": 4000,
+      "base_meters_agl": 1219,
+      "code": "BKN",
+      "feet": 4000,
+      "meters": 1219,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2500,
+        "base_meters_agl": 762,
+        "code": "FEW",
+        "feet": 2500,
+        "meters": 762,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 4000,
+        "base_meters_agl": 1219,
+        "code": "BKN",
+        "feet": 4000,
+        "meters": 1219,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SH",
+        "prefix": "VC",
+        "text": "Area Showers"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -7,
+      "fahrenheit": 19
+    },
+    "elevation": {
+      "feet": 85,
+      "meters": 26
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 52
+    },
+    "icao": "ENLK",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENLK 231320Z 34021G31KT 9999 VCSH FEW025CB BKN040 02/M07 Q0989",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          13.6094,
+          68.152496
+        ],
+        "type": "Point"
+      },
+      "location": "Leknes, NO",
+      "name": "Leknes Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 2,
+      "fahrenheit": 36
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 340,
+      "gust_kph": 57,
+      "gust_kts": 31,
+      "gust_mph": 36,
+      "gust_mps": 16,
+      "speed_kph": 39,
+      "speed_kts": 21,
+      "speed_mph": 24,
+      "speed_mps": 11
+    },
+    "windchill": {
+      "celsius": -4,
+      "fahrenheit": 24
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.08,
+      "hpa": 985,
+      "kpa": 98.49,
+      "mb": 984.92
+    },
+    "ceiling": {
+      "base_feet_agl": 0,
+      "base_meters_agl": 0,
+      "code": "OVX",
+      "feet": 0,
+      "meters": 0,
+      "text": "Vertical visibility"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 0,
+        "base_meters_agl": 0,
+        "code": "OVX",
+        "feet": 0,
+        "meters": 0,
+        "text": "Vertical visibility"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SN",
+        "prefix": "-",
+        "text": "Light Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -6,
+      "fahrenheit": 21
+    },
+    "elevation": {
+      "feet": 33,
+      "meters": 10
+    },
+    "flight_category": "LIFR",
+    "humidity": {
+      "percent": 86
+    },
+    "icao": "ENMH",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENMH 231320Z AUTO 15005KT 100V180 9999 -SN VV019 M04/M06 Q0985",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          27.8267,
+          71.029701
+        ],
+        "type": "Point"
+      },
+      "location": "Mehamn, NO",
+      "name": "Mehamn Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -4,
+      "fahrenheit": 25
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21,
+      "vertical": {
+        "feet": 1900,
+        "meters": 579
+      }
+    },
+    "wind": {
+      "degrees": 150,
+      "speed_kph": 9,
+      "speed_kts": 5,
+      "speed_mph": 6,
+      "speed_mps": 3
+    },
+    "windchill": {
+      "celsius": -8,
+      "fahrenheit": 18
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.62,
+      "hpa": 1003,
+      "kpa": 100.29,
+      "mb": 1002.92
+    },
+    "ceiling": {
+      "base_feet_agl": 2200,
+      "base_meters_agl": 671,
+      "code": "BKN",
+      "feet": 2200,
+      "meters": 671,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1100,
+        "base_meters_agl": 335,
+        "code": "SCT",
+        "feet": 1100,
+        "meters": 335,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 2200,
+        "base_meters_agl": 671,
+        "code": "BKN",
+        "feet": 2200,
+        "meters": 671,
+        "text": "Broken"
+      },
+      {
+        "base_feet_agl": 3000,
+        "base_meters_agl": 914,
+        "code": "OVC",
+        "feet": 3000,
+        "meters": 914,
+        "text": "Overcast"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "elevation": {
+      "feet": 10,
+      "meters": 3
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENML",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENML 231320Z 31004KT 280V360 7000 -SHSN SCT011 BKN022 OVC030 M00/M01 Q1003",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          7.2625,
+          62.744701
+        ],
+        "type": "Point"
+      },
+      "location": "Årø, NO",
+      "name": "Molde Airport, Årø",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "visibility": {
+      "meters": "7,000",
+      "meters_float": 7000,
+      "miles": "4.35",
+      "miles_float": 4.35
+    },
+    "wind": {
+      "degrees": 310,
+      "speed_kph": 7,
+      "speed_kts": 4,
+      "speed_mph": 5,
+      "speed_mps": 2
+    },
+    "windchill": {
+      "celsius": -3,
+      "fahrenheit": 27
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.08,
+      "hpa": 985,
+      "kpa": 98.49,
+      "mb": 984.92
+    },
+    "clouds": [],
+    "conditions": [
+      {
+        "code": "SN",
+        "prefix": "-",
+        "text": "Light Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -11,
+      "fahrenheit": 12
+    },
+    "elevation": {
+      "feet": 39,
+      "meters": 12
+    },
+    "flight_category": "UNK",
+    "humidity": {
+      "percent": 86
+    },
+    "icao": "ENNA",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENNA 231320Z AUTO 19002KT 5000 -SN ///022/// M09/M11 Q0985 RESN RMK WIND 1800FT 17007KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          24.973499,
+          70.068802
+        ],
+        "type": "Point"
+      },
+      "location": "Lakselv, NO",
+      "name": "Lakselv Airport, Banak",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -9,
+      "fahrenheit": 16
+    },
+    "visibility": {
+      "meters": "5,000",
+      "meters_float": 5000,
+      "miles": "3.11",
+      "miles_float": 3.11
+    },
+    "wind": {
+      "degrees": 190,
+      "speed_kph": 4,
+      "speed_kts": 2,
+      "speed_mph": 2,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.47,
+      "hpa": 998,
+      "kpa": 99.79,
+      "mb": 997.92
+    },
+    "ceiling": {
+      "base_feet_agl": 4700,
+      "base_meters_agl": 1433,
+      "code": "BKN",
+      "feet": 4700,
+      "meters": 1433,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 4700,
+        "base_meters_agl": 1433,
+        "code": "BKN",
+        "feet": 4700,
+        "meters": 1433,
+        "text": "Broken"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -3,
+      "fahrenheit": 27
+    },
+    "elevation": {
+      "feet": 7,
+      "meters": 2
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 86
+    },
+    "icao": "ENNM",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENNM 231320Z AUTO 25005KT 9999 BKN047 M01/M03 Q0998 REFZRA",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          11.5786,
+          64.472198
+        ],
+        "type": "Point"
+      },
+      "location": "Namsos, NO",
+      "name": "Namsos Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 250,
+      "speed_kph": 9,
+      "speed_kts": 5,
+      "speed_mph": 6,
+      "speed_mps": 3
+    },
+    "windchill": {
+      "celsius": -4,
+      "fahrenheit": 24
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.68,
+      "hpa": 1005,
+      "kpa": 100.49,
+      "mb": 1004.92
+    },
+    "clouds": [
+      {
+        "code": "CAVOK",
+        "text": "Clear skies"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -12,
+      "fahrenheit": 10
+    },
+    "elevation": {
+      "feet": 62,
+      "meters": 19
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 85
+    },
+    "icao": "ENNO",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENNO 231320Z VRB02KT CAVOK M10/M12 Q1005",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          9.21222,
+          59.565701
+        ],
+        "type": "Point"
+      },
+      "location": "Notodden, NO",
+      "name": "Notodden Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -10,
+      "fahrenheit": 14
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 4,
+      "speed_kts": 2,
+      "speed_mph": 2,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.53,
+      "hpa": 1000,
+      "kpa": 99.99,
+      "mb": 999.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1200,
+        "base_meters_agl": 366,
+        "code": "SCT",
+        "feet": 1200,
+        "meters": 366,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 2500,
+        "base_meters_agl": 762,
+        "code": "SCT",
+        "feet": 2500,
+        "meters": 762,
+        "text": "Scattered"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "elevation": {
+      "feet": 30,
+      "meters": 9
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENOL",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENOL 231320Z 25015KT 9999 2000E -SHSN SCT012CB SCT025 M00/M01 Q1000 TEMPO 30018G28KT 0800 SHSNGS VV006",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          9.604,
+          63.698898
+        ],
+        "type": "Point"
+      },
+      "location": "Ørland, NO",
+      "name": "Ørland Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 250,
+      "speed_kph": 28,
+      "speed_kts": 15,
+      "speed_mph": 17,
+      "speed_mps": 8
+    },
+    "windchill": {
+      "celsius": -6,
+      "fahrenheit": 21
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.65,
+      "hpa": 1004,
+      "kpa": 100.39,
+      "mb": 1003.92
+    },
+    "ceiling": {
+      "base_feet_agl": 5700,
+      "base_meters_agl": 1737,
+      "code": "BKN",
+      "feet": 5700,
+      "meters": 1737,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 4200,
+        "base_meters_agl": 1280,
+        "code": "FEW",
+        "feet": 4200,
+        "meters": 1280,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 5700,
+        "base_meters_agl": 1737,
+        "code": "BKN",
+        "feet": 5700,
+        "meters": 1737,
+        "text": "Broken"
+      },
+      {
+        "base_feet_agl": 7400,
+        "base_meters_agl": 2256,
+        "code": "OVC",
+        "feet": 7400,
+        "meters": 2256,
+        "text": "Overcast"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "elevation": {
+      "feet": 236,
+      "meters": 72
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENOV",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENOV 231320Z AUTO 22003KT 190V270 9999 FEW042/// BKN057/// OVC074/// M01/M02 Q1004 RMK WIND RWY24 21004KT WIND 2090FT 30012KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          6.0741,
+          62.18
+        ],
+        "type": "Point"
+      },
+      "location": "Ørsta, NO",
+      "name": "Ørsta-Volda Airport, Hovden",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 220,
+      "speed_kph": 6,
+      "speed_kts": 3,
+      "speed_mph": 3,
+      "speed_mps": 2
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.23,
+      "hpa": 990,
+      "kpa": 98.99,
+      "mb": 989.92
+    },
+    "ceiling": {
+      "base_feet_agl": 2700,
+      "base_meters_agl": 823,
+      "code": "BKN",
+      "feet": 2700,
+      "meters": 823,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2000,
+        "base_meters_agl": 610,
+        "code": "SCT",
+        "feet": 2000,
+        "meters": 610,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 2700,
+        "base_meters_agl": 823,
+        "code": "BKN",
+        "feet": 2700,
+        "meters": 823,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SH",
+        "prefix": "VC",
+        "text": "Area Showers"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -6,
+      "fahrenheit": 21
+    },
+    "elevation": {
+      "feet": 217,
+      "meters": 66
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 100
+    },
+    "icao": "ENRA",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENRA 231320Z VRB02KT 9999 VCSH SCT020 BKN027 M06/M06 Q0990",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          14.3014,
+          66.363899
+        ],
+        "type": "Point"
+      },
+      "location": "Mo i Rana, NO",
+      "name": "Mo i Rana Airport, Røssvoll",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -6,
+      "fahrenheit": 21
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 4,
+      "speed_kts": 2,
+      "speed_mph": 2,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.44,
+      "hpa": 997,
+      "kpa": 99.69,
+      "mb": 996.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 5500,
+        "base_meters_agl": 1676,
+        "code": "FEW",
+        "feet": 5500,
+        "meters": 1676,
+        "text": "Few"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -5,
+      "fahrenheit": 23
+    },
+    "elevation": {
+      "feet": 13,
+      "meters": 4
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 69
+    },
+    "icao": "ENRM",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENRM 231320Z AUTO 28009KT 9999 FEW055 00/M05 Q0997",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          11.1461,
+          64.838303
+        ],
+        "type": "Point"
+      },
+      "location": "Rørvik, NO",
+      "name": "Rørvik Airport, Ryum",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 280,
+      "speed_kph": 17,
+      "speed_kts": 9,
+      "speed_mph": 10,
+      "speed_mps": 5
+    },
+    "windchill": {
+      "celsius": -4,
+      "fahrenheit": 24
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.47,
+      "hpa": 998,
+      "kpa": 99.79,
+      "mb": 997.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 3900,
+        "base_meters_agl": 1189,
+        "code": "SCT",
+        "feet": 3900,
+        "meters": 1189,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 7200,
+        "base_meters_agl": 2195,
+        "code": "SCT",
+        "feet": 7200,
+        "meters": 2195,
+        "text": "Scattered"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -14,
+      "fahrenheit": 7
+    },
+    "elevation": {
+      "feet": 2047,
+      "meters": 624
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 85
+    },
+    "icao": "ENRO",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENRO 231320Z 23005KT 9999 -SHSN SCT039 SCT072 M12/M14 Q0998",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          11.3423,
+          62.5784
+        ],
+        "type": "Point"
+      },
+      "location": "Røros, NO",
+      "name": "Røros Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -12,
+      "fahrenheit": 10
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 230,
+      "speed_kph": 9,
+      "speed_kts": 5,
+      "speed_mph": 6,
+      "speed_mps": 3
+    },
+    "windchill": {
+      "celsius": -18,
+      "fahrenheit": 0
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.29,
+      "hpa": 992,
+      "kpa": 99.19,
+      "mb": 991.92
+    },
+    "ceiling": {
+      "base_feet_agl": 3400,
+      "base_meters_agl": 1036,
+      "code": "BKN",
+      "feet": 3400,
+      "meters": 1036,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2300,
+        "base_meters_agl": 701,
+        "code": "FEW",
+        "feet": 2300,
+        "meters": 701,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 3400,
+        "base_meters_agl": 1036,
+        "code": "BKN",
+        "feet": 3400,
+        "meters": 1036,
+        "text": "Broken"
+      },
+      {
+        "base_feet_agl": 4700,
+        "base_meters_agl": 1433,
+        "code": "OVC",
+        "feet": 4700,
+        "meters": 1433,
+        "text": "Overcast"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHRA",
+        "prefix": "-",
+        "text": "Light Showers, Rain"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -3,
+      "fahrenheit": 27
+    },
+    "elevation": {
+      "feet": 13,
+      "meters": 4
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 65
+    },
+    "icao": "ENRS",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENRS 231320Z AUTO 34026KT 9999 -SHRA FEW023 BKN034 OVC047 03/M03 Q0992 RESHRA",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          12.1033,
+          67.527802
+        ],
+        "type": "Point"
+      },
+      "location": "NO",
+      "name": "Røst Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 3,
+      "fahrenheit": 37
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 340,
+      "speed_kph": 48,
+      "speed_kts": 26,
+      "speed_mph": 30,
+      "speed_mps": 13
+    },
+    "windchill": {
+      "celsius": -4,
+      "fahrenheit": 24
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.53,
+      "hpa": 1000,
+      "kpa": 99.99,
+      "mb": 999.92
+    },
+    "ceiling": {
+      "base_feet_agl": 5300,
+      "base_meters_agl": 1615,
+      "code": "BKN",
+      "feet": 5300,
+      "meters": 1615,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 3300,
+        "base_meters_agl": 1006,
+        "code": "SCT",
+        "feet": 3300,
+        "meters": 1006,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 5300,
+        "base_meters_agl": 1615,
+        "code": "BKN",
+        "feet": 5300,
+        "meters": 1615,
+        "text": "Broken"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -18,
+      "fahrenheit": 0
+    },
+    "elevation": {
+      "feet": 98,
+      "meters": 30
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 61
+    },
+    "icao": "ENSB",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENSB 231320Z 12006KT 090V150 9999 SCT033 BKN053 M12/M18 Q1000 NOSIG RMK WIND 1400FT /////KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          15.4656,
+          78.246101
+        ],
+        "type": "Point"
+      },
+      "location": "Longyearbyen, NO",
+      "name": "Svalbard Airport, Longyear",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -12,
+      "fahrenheit": 10
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 120,
+      "speed_kph": 11,
+      "speed_kts": 6,
+      "speed_mph": 7,
+      "speed_mps": 3
+    },
+    "windchill": {
+      "celsius": -18,
+      "fahrenheit": -1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.68,
+      "hpa": 1005,
+      "kpa": 100.49,
+      "mb": 1004.92
+    },
+    "ceiling": {
+      "base_feet_agl": 3400,
+      "base_meters_agl": 1036,
+      "code": "BKN",
+      "feet": 3400,
+      "meters": 1036,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 500,
+        "base_meters_agl": 152,
+        "code": "SCT",
+        "feet": 500,
+        "meters": 152,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 2100,
+        "base_meters_agl": 640,
+        "code": "SCT",
+        "feet": 2100,
+        "meters": 640,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 3400,
+        "base_meters_agl": 1036,
+        "code": "BKN",
+        "feet": 3400,
+        "meters": 1036,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "elevation": {
+      "feet": 200,
+      "meters": 61
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 100
+    },
+    "icao": "ENSD",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENSD 231320Z 00000KT 9999 -SHSN SCT005 SCT021TCU BKN034 00/M00 Q1005 RMK WIND RWY26 VRB02KT WIND 1140FT 24003KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          6.10583,
+          61.830002
+        ],
+        "type": "Point"
+      },
+      "location": "Sandane, NO",
+      "name": "Sandane Airport, Anda",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.59,
+      "hpa": 1002,
+      "kpa": 100.19,
+      "mb": 1001.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2700,
+        "base_meters_agl": 823,
+        "code": "SCT",
+        "feet": 2700,
+        "meters": 823,
+        "text": "Scattered"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -7,
+      "fahrenheit": 19
+    },
+    "elevation": {
+      "feet": 1617,
+      "meters": 493
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENSG",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENSG 231320Z VRB01KT 9999 FEW/// SCT027 M06/M07 Q1002 RMK WIND 3806FT 29017KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          7.13778,
+          61.156101
+        ],
+        "type": "Point"
+      },
+      "location": "Sogndal, NO",
+      "name": "Sogndal Airport, Haukåsen",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -6,
+      "fahrenheit": 21
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 2,
+      "speed_kts": 1,
+      "speed_mph": 1,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.14,
+      "hpa": 987,
+      "kpa": 98.69,
+      "mb": 986.92
+    },
+    "ceiling": {
+      "base_feet_agl": 0,
+      "base_meters_agl": 0,
+      "code": "OVX",
+      "feet": 0,
+      "meters": 0,
+      "text": "Vertical visibility"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 0,
+        "base_meters_agl": 0,
+        "code": "OVX",
+        "feet": 0,
+        "meters": 0,
+        "text": "Vertical visibility"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "elevation": {
+      "feet": 30,
+      "meters": 9
+    },
+    "flight_category": "LIFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENSH",
+    "observed": "2022-12-23T12:50Z",
+    "raw_text": "ENSH 231250Z 35015KT 3000 -SHSN VV007 M00/M01 Q0987 RMK WIND 150FT 34013KT 300V010",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          14.6692,
+          68.243301
+        ],
+        "type": "Point"
+      },
+      "location": "Svolvær, NO",
+      "name": "Svolvær Airport, Helle",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "visibility": {
+      "meters": "3,000",
+      "meters_float": 3000,
+      "miles": "1.86",
+      "miles_float": 1.86,
+      "vertical": {
+        "feet": 700,
+        "meters": 213
+      }
+    },
+    "wind": {
+      "degrees": 350,
+      "speed_kph": 28,
+      "speed_kts": 15,
+      "speed_mph": 17,
+      "speed_mps": 8
+    },
+    "windchill": {
+      "celsius": -6,
+      "fahrenheit": 21
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.14,
+      "hpa": 987,
+      "kpa": 98.69,
+      "mb": 986.92
+    },
+    "ceiling": {
+      "base_feet_agl": 3200,
+      "base_meters_agl": 975,
+      "code": "BKN",
+      "feet": 3200,
+      "meters": 975,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 1000,
+        "base_meters_agl": 305,
+        "code": "FEW",
+        "feet": 1000,
+        "meters": 305,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 2000,
+        "base_meters_agl": 610,
+        "code": "SCT",
+        "feet": 2000,
+        "meters": 610,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 3200,
+        "base_meters_agl": 975,
+        "code": "BKN",
+        "feet": 3200,
+        "meters": 975,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "prefix": "-",
+        "text": "Light Showers, Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -3,
+      "fahrenheit": 27
+    },
+    "elevation": {
+      "feet": 10,
+      "meters": 3
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 80
+    },
+    "icao": "ENSK",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENSK 231320Z 33016G28KT 290V010 6000 -SHSN FEW010 SCT020 BKN032 M00/M03 Q0987",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          15.033417,
+          68.578827
+        ],
+        "type": "Point"
+      },
+      "location": "Hadsel, NO",
+      "name": "Stokmarknes Airport, Skagen",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "visibility": {
+      "meters": "6,000",
+      "meters_float": 6000,
+      "miles": "3.73",
+      "miles_float": 3.73
+    },
+    "wind": {
+      "degrees": 330,
+      "gust_kph": 52,
+      "gust_kts": 28,
+      "gust_mph": 32,
+      "gust_mps": 14,
+      "speed_kph": 30,
+      "speed_kts": 16,
+      "speed_mph": 18,
+      "speed_mps": 8
+    },
+    "windchill": {
+      "celsius": -6,
+      "fahrenheit": 21
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.68,
+      "hpa": 1005,
+      "kpa": 100.49,
+      "mb": 1004.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2000,
+        "base_meters_agl": 610,
+        "code": "FEW",
+        "feet": 2000,
+        "meters": 610,
+        "text": "Few"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "elevation": {
+      "feet": 157,
+      "meters": 48
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 81
+    },
+    "icao": "ENSO",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENSO 231320Z 30003KT 9999 FEW020TCU 01/M02 Q1005",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          5.34085,
+          59.791901
+        ],
+        "type": "Point"
+      },
+      "location": "Leirvik, NO",
+      "name": "Stord Airport, Sørstokken",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 1,
+      "fahrenheit": 34
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 300,
+      "speed_kph": 6,
+      "speed_kts": 3,
+      "speed_mph": 3,
+      "speed_mps": 2
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.11,
+      "hpa": 986,
+      "kpa": 98.59,
+      "mb": 985.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2900,
+        "base_meters_agl": 884,
+        "code": "FEW",
+        "feet": 2900,
+        "meters": 884,
+        "text": "Few"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -15,
+      "fahrenheit": 5
+    },
+    "elevation": {
+      "feet": 16,
+      "meters": 5
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 85
+    },
+    "icao": "ENSR",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENSR 231320Z VRB02KT 9999 FEW029 M13/M15 Q0986 RMK WIND RWY32 00000KT WIND 1118FT VRB03KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          20.9594,
+          69.786797
+        ],
+        "type": "Point"
+      },
+      "location": "Sørkjosen, NO",
+      "name": "Sørkjosen Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -13,
+      "fahrenheit": 9
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 4,
+      "speed_kts": 2,
+      "speed_mph": 2,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.08,
+      "hpa": 985,
+      "kpa": 98.49,
+      "mb": 984.92
+    },
+    "ceiling": {
+      "base_feet_agl": 2000,
+      "base_meters_agl": 610,
+      "code": "BKN",
+      "feet": 2000,
+      "meters": 610,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2000,
+        "base_meters_agl": 610,
+        "code": "BKN",
+        "feet": 2000,
+        "meters": 610,
+        "text": "Broken"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -5,
+      "fahrenheit": 23
+    },
+    "elevation": {
+      "feet": 43,
+      "meters": 13
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 75
+    },
+    "icao": "ENSS",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENSS 231320Z 14014KT 9999 BKN020 M01/M05 Q0985 RMK WIND 0500FT 11018KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          31.044901,
+          70.3554
+        ],
+        "type": "Point"
+      },
+      "location": "Vardø, NO",
+      "name": "Vardø Airport, Svartnes",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 140,
+      "speed_kph": 26,
+      "speed_kts": 14,
+      "speed_mph": 16,
+      "speed_mps": 7
+    },
+    "windchill": {
+      "celsius": -7,
+      "fahrenheit": 19
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.32,
+      "hpa": 993,
+      "kpa": 99.29,
+      "mb": 992.92
+    },
+    "ceiling": {
+      "base_feet_agl": 0,
+      "base_meters_agl": 0,
+      "code": "OVX",
+      "feet": 0,
+      "meters": 0,
+      "text": "Vertical visibility"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 0,
+        "base_meters_agl": 0,
+        "code": "OVX",
+        "feet": 0,
+        "meters": 0,
+        "text": "Vertical visibility"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SHSN",
+        "text": "Showers, Snow"
+      },
+      {
+        "code": "SHRA",
+        "text": "Showers, Rain"
+      },
+      {
+        "code": "SHGS",
+        "text": "Showers, Small hail"
+      }
+    ],
+    "dewpoint": {
+      "celsius": 0,
+      "fahrenheit": 32
+    },
+    "elevation": {
+      "feet": 56,
+      "meters": 17
+    },
+    "flight_category": "LIFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENST",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENST 231320Z 28012KT 210V300 2000 SHSNRAGS VV006 01/00 Q0993 RMK WIND 300FT 30017KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          12.4689,
+          65.956802
+        ],
+        "type": "Point"
+      },
+      "location": "Alstahaug, NO",
+      "name": "Sandnessjøen Airport, Stokka",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 1,
+      "fahrenheit": 34
+    },
+    "visibility": {
+      "meters": "2,000",
+      "meters_float": 2000,
+      "miles": "1.24",
+      "miles_float": 1.24,
+      "vertical": {
+        "feet": 600,
+        "meters": 183
+      }
+    },
+    "wind": {
+      "degrees": 280,
+      "speed_kph": 22,
+      "speed_kts": 12,
+      "speed_mph": 14,
+      "speed_mps": 6
+    },
+    "windchill": {
+      "celsius": -4,
+      "fahrenheit": 25
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.08,
+      "hpa": 985,
+      "kpa": 98.49,
+      "mb": 984.92
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 2000,
+        "base_meters_agl": 610,
+        "code": "FEW",
+        "feet": 2000,
+        "meters": 610,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 4600,
+        "base_meters_agl": 1402,
+        "code": "SCT",
+        "feet": 4600,
+        "meters": 1402,
+        "text": "Scattered"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -7,
+      "fahrenheit": 19
+    },
+    "elevation": {
+      "feet": 30,
+      "meters": 9
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 80
+    },
+    "icao": "ENTC",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENTC 231320Z VRB02KT 9999 FEW020 SCT046 M04/M07 Q0985 NOSIG RMK WIND 2600FT 34009KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          18.9189,
+          69.683296
+        ],
+        "type": "Point"
+      },
+      "location": "Tromsø, NO",
+      "name": "Tromsø Airport, Langnes",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -4,
+      "fahrenheit": 25
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 4,
+      "speed_kts": 2,
+      "speed_mph": 2,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.62,
+      "hpa": 1003,
+      "kpa": 100.29,
+      "mb": 1002.92
+    },
+    "clouds": [
+      {
+        "code": "CAVOK",
+        "text": "Clear skies"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -5,
+      "fahrenheit": 23
+    },
+    "elevation": {
+      "feet": 276,
+      "meters": 84
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 80
+    },
+    "icao": "ENTO",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENTO 231320Z 27002KT CAVOK M02/M05 Q1003 NOSIG",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          10.2586,
+          59.186699
+        ],
+        "type": "Point"
+      },
+      "location": "Torp, NO",
+      "name": "Sandefjord Airport, Torp",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 270,
+      "speed_kph": 4,
+      "speed_kts": 2,
+      "speed_mph": 2,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.56,
+      "hpa": 1001,
+      "kpa": 100.09,
+      "mb": 1000.92
+    },
+    "ceiling": {
+      "base_feet_agl": 3000,
+      "base_meters_agl": 914,
+      "code": "BKN",
+      "feet": 3000,
+      "meters": 914,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 600,
+        "base_meters_agl": 183,
+        "code": "FEW",
+        "feet": 600,
+        "meters": 183,
+        "text": "Few"
+      },
+      {
+        "base_feet_agl": 1200,
+        "base_meters_agl": 366,
+        "code": "SCT",
+        "feet": 1200,
+        "meters": 366,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 3000,
+        "base_meters_agl": 914,
+        "code": "BKN",
+        "feet": 3000,
+        "meters": 914,
+        "text": "Broken"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -3,
+      "fahrenheit": 27
+    },
+    "elevation": {
+      "feet": 39,
+      "meters": 12
+    },
+    "flight_category": "MVFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENVA",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENVA 231320Z VRB02KT 9999 FEW006 SCT012 BKN030 M02/M03 Q1001 TEMPO 0800 SHSN VV005 RMK WIND 670FT 22005KT",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          10.924,
+          63.457802
+        ],
+        "type": "Point"
+      },
+      "location": "Trondheim, NO",
+      "name": "Trondheim Airport, Værnes",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -2,
+      "fahrenheit": 28
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 4,
+      "speed_kts": 2,
+      "speed_mph": 2,
+      "speed_mps": 1
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.06,
+      "hpa": 984,
+      "kpa": 98.39,
+      "mb": 983.92
+    },
+    "ceiling": {
+      "base_feet_agl": 1200,
+      "base_meters_agl": 366,
+      "code": "BKN",
+      "feet": 1200,
+      "meters": 366,
+      "text": "Broken"
+    },
+    "clouds": [
+      {
+        "base_feet_agl": 600,
+        "base_meters_agl": 183,
+        "code": "SCT",
+        "feet": 600,
+        "meters": 183,
+        "text": "Scattered"
+      },
+      {
+        "base_feet_agl": 1200,
+        "base_meters_agl": 366,
+        "code": "BKN",
+        "feet": 1200,
+        "meters": 366,
+        "text": "Broken"
+      }
+    ],
+    "conditions": [
+      {
+        "code": "SN",
+        "prefix": "-",
+        "text": "Light Snow"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -5,
+      "fahrenheit": 23
+    },
+    "elevation": {
+      "feet": 128,
+      "meters": 39
+    },
+    "flight_category": "IFR",
+    "humidity": {
+      "percent": 93
+    },
+    "icao": "ENVD",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENVD 231320Z 14010KT 3000 -SN SCT006 BKN012 M04/M05 Q0984",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          29.8447,
+          70.0653
+        ],
+        "type": "Point"
+      },
+      "location": "Vadsø, NO",
+      "name": "Vadsø Airport",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": -4,
+      "fahrenheit": 25
+    },
+    "visibility": {
+      "meters": "3,000",
+      "meters_float": 3000,
+      "miles": "1.86",
+      "miles_float": 1.86
+    },
+    "wind": {
+      "degrees": 140,
+      "speed_kph": 19,
+      "speed_kts": 10,
+      "speed_mph": 12,
+      "speed_mps": 5
+    },
+    "windchill": {
+      "celsius": -10,
+      "fahrenheit": 14
+    }
+  },
+  {
+    "barometer": {
+      "hg": 29.68,
+      "hpa": 1005,
+      "kpa": 100.49,
+      "mb": 1004.92
+    },
+    "clouds": [
+      {
+        "code": "CAVOK",
+        "text": "Clear skies"
+      }
+    ],
+    "dewpoint": {
+      "celsius": -1,
+      "fahrenheit": 30
+    },
+    "elevation": {
+      "feet": 23,
+      "meters": 7
+    },
+    "flight_category": "VFR",
+    "humidity": {
+      "percent": 81
+    },
+    "icao": "ENZV",
+    "observed": "2022-12-23T13:20Z",
+    "raw_text": "ENZV 231320Z VRB03KT CAVOK 02/M01 Q1005",
+    "station": {
+      "geometry": {
+        "coordinates": [
+          5.63778,
+          58.876701
+        ],
+        "type": "Point"
+      },
+      "location": "Stavanger, NO",
+      "name": "Stavanger Airport, Sola",
+      "type": "Airport"
+    },
+    "temperature": {
+      "celsius": 2,
+      "fahrenheit": 36
+    },
+    "visibility": {
+      "meters": "10,000+",
+      "meters_float": 9999,
+      "miles": "Greater than 6",
+      "miles_float": 6.21
+    },
+    "wind": {
+      "degrees": 0,
+      "speed_kph": 6,
+      "speed_kts": 3,
+      "speed_mph": 3,
+      "speed_mps": 2
+    }
+  }
+]
