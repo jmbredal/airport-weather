@@ -2,10 +2,13 @@ import { Card, Container, ToggleButton, ToggleButtonGroup } from '@mui/material'
 import { useEffect, useState } from 'react';
 import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
+import { getMetars } from '../utils/metar-service';
 
 type OrderBy = 'icao' | 'wind' | 'temp';
 
 export default function Metars() {
+  console.log('Metars render');
+  
 
   const [metars, setMetars] = useState<Metar[]>([]);
   const [orderBy, setOrderBy] = useState<OrderBy>('icao');
@@ -15,9 +18,9 @@ export default function Metars() {
   }
 
   useEffect(() => {
-    fetch('/api/metars')
-      .then(res => res.json())
-      .then(metars => setMetars(metars));
+    console.log('useEffect');
+    
+    getMetars().then(metars => setMetars(metars));
   }, []);
 
   const metarElements = metars.sort(getSortFunction(orderBy)).map(metar => {
