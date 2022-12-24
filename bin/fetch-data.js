@@ -6,13 +6,13 @@ const filename = 'icaos.json';
 const metarsFilename = 'metars.json';
 
 // Load all icaos and fetch metar data for each
-loadIcaos().then((icaoInfo) => {
-  const chunks = chunk(icaoInfo.map(i => i.icao));
-  const metars = fetchMetarData(chunks);
-
-  fs.writeFileSync(metarsFilename, JSON.stringify(metars));
-
-});
+loadIcaos()
+  .then((icaoInfo) => {
+    const chunks = chunk(icaoInfo.map(i => i.icao));
+    return fetchMetarData(chunks);
+  }).then(metars => {
+    fs.writeFileSync(metarsFilename, JSON.stringify(metars));
+  });
 
 async function loadIcaos() {
   try {
@@ -67,10 +67,10 @@ async function fetchMetarData(chunks) {
   const metars = [];
   for (const chunk of chunks) {
     const result = await fetchMetar(chunk);
-    metars = metars.concat(result);
+    metars.push(result);
   }
 
-  return metars;
+  return metars.flatMap(x => x);
 }
 
 async function fetchMetar(icaos) {
