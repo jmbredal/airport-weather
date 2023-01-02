@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
+    "postbuild": "npm run fix && scp -r out/* bredal@jmbredal.no:airport-weather",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fix": "sed -i 's,/_next/static/,./_next/static/,g' out/index.html"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

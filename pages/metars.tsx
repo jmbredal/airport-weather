@@ -1,5 +1,4 @@
 import { Card, Container, FormControl, Grid, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
-import { useRouter } from "next/router";
 import { useEffect, useState } from 'react';
 import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
@@ -9,8 +8,6 @@ type OrderBy = 'icao' | 'wind' | 'temp';
 
 export default function Metars() {
   console.log('Metars render');
-
-  const router = useRouter();
 
   const [metars, setMetars] = useState<Metar[]>([]);
   const [orderBy, setOrderBy] = useState<OrderBy>('icao');
@@ -25,14 +22,19 @@ export default function Metars() {
   const handleSelectChange = (event: SelectChangeEvent) => {
     const icao = event.target.value;
     setSelectedAirport(icao);
-    router.push('/#' + icao);
   };
 
   useEffect(() => {
-    console.log('useEffect');
-
+    console.log('effect getmetars');
     getMetars().then(metars => setMetars(metars));
   }, []);
+
+  useEffect(() => {
+    if (selectedAirport) {
+      const element = document.getElementById(selectedAirport);
+      element?.scrollIntoView({behavior: 'smooth'});
+    }
+  }, [selectedAirport]);
 
   // Airports in the dropdown
   const airportMenuItems = metars.map(m => {
