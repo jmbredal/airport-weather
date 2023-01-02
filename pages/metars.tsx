@@ -32,7 +32,7 @@ export default function Metars() {
     return <Card className={styles.card} variant='outlined' key={metar.icao}>
       <header className={styles.header}>
         <h1 className={styles.h1}>{metar.icao}</h1>
-        <span>{metar.station.name}</span>
+        <span>{metar.station.name} ({metar.elevation.meters} m)</span>
       </header>
 
       <div>
