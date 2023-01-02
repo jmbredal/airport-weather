@@ -84,9 +84,9 @@ function getSortFunction(key: OrderBy) {
       case 'icao':
         return a.icao.localeCompare(b.icao);
       case 'temp':
-        return a.temperature?.celsius - b.temperature.celsius;
+        return !a.temperature ? 100 : !b.temperature ? -100 : a.temperature?.celsius - b.temperature.celsius;
       case 'wind':
-        return b.wind?.speed_mps - a.wind?.speed_mps;
+        return !a.wind ? 100 : !b.wind ? -100 : b.wind?.speed_mps - a.wind?.speed_mps;
     }
   }
 }
