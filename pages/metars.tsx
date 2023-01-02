@@ -27,6 +27,7 @@ export default function Metars() {
     const clouds = metar.clouds?.map(c => {
       return c.code === 'CAVOK' ? 'No clouds' : `${c.text} ${c.meters} m`
     }).join(', ');
+    const observed = new Date(metar.observed);
     const conditions = metar.conditions?.map(c => c.text).join(', ');
 
     return <Card className={styles.card} variant='outlined' key={metar.icao}>
@@ -36,6 +37,8 @@ export default function Metars() {
       </header>
 
       <div>
+        <p>{observed.toISOString()}</p>
+
         <ul>
           {metar.wind && <li>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</li>}
           <li>Temp: {metar.temperature?.celsius}° C</li>
