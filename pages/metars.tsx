@@ -1,4 +1,5 @@
-import { Card, Container, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { Card, Container, FormControl, Grid, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { useRouter } from "next/router";
 import { useEffect, useState } from 'react';
 import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
@@ -8,21 +9,37 @@ type OrderBy = 'icao' | 'wind' | 'temp';
 
 export default function Metars() {
   console.log('Metars render');
-  
+
+  const router = useRouter();
 
   const [metars, setMetars] = useState<Metar[]>([]);
   const [orderBy, setOrderBy] = useState<OrderBy>('icao');
+  const [selectedAirport, setSelectedAirport] = useState('');
 
+  // Handle sort change
   const handleToggleChange = (event: any, value: any) => {
     setOrderBy(value);
   }
 
+  // Handle selected airport change
+  const handleSelectChange = (event: SelectChangeEvent) => {
+    const icao = event.target.value;
+    setSelectedAirport(icao);
+    router.push('/#' + icao);
+  };
+
   useEffect(() => {
     console.log('useEffect');
-    
+
     getMetars().then(metars => setMetars(metars));
   }, []);
 
+  // Airports in the dropdown
+  const airportMenuItems = metars.map(m => {
+    return <MenuItem key={m.icao} value={m.icao}>{m.icao}: {m.station.name}</MenuItem>
+  });
+
+  // All metar cards
   const metarElements = metars.sort(getSortFunction(orderBy)).map(metar => {
     const clouds = metar.clouds?.map(c => {
       return c.code === 'CAVOK' ? 'No clouds' : `${c.text} ${c.meters} m`
@@ -30,7 +47,7 @@ export default function Metars() {
     const observed = new Date(metar.observed);
     const conditions = metar.conditions?.map(c => c.text).join(', ');
 
-    return <Card className={styles.card} variant='outlined' key={metar.icao}>
+    return <Card id={metar.icao} className={styles.card} variant='outlined' key={metar.icao}>
       <header className={styles.header}>
         <h1 className={styles.h1}>{metar.icao}</h1>
         <span>{metar.station.name} ({metar.elevation.meters} m)</span>
@@ -54,20 +71,33 @@ export default function Metars() {
     <Container className={styles.container} maxWidth={'sm'}>
       <h1>Weather at Norwegian airports</h1>
 
-      <small>Sort: </small>
-      <ToggleButtonGroup
-        color="primary"
-        value={orderBy}
-        exclusive
-        onChange={handleToggleChange}
-        aria-label="Platform"
-      >
-        <ToggleButton value="icao">Icao</ToggleButton>
-        <ToggleButton value="temp">Temp</ToggleButton>
-        <ToggleButton value="wind">Wind</ToggleButton>
-      </ToggleButtonGroup>
+      <Grid container spacing={2} mb={1}>
+        <Grid item xs={6}>
+          <small>Sort: </small>
+          <ToggleButtonGroup
+            color='primary'
+            value={orderBy}
+            exclusive
+            onChange={handleToggleChange}
+            aria-label='Sort'
+            size='small'
+          >
+            <ToggleButton value="icao">Icao</ToggleButton>
+            <ToggleButton value="temp">Temp</ToggleButton>
+            <ToggleButton value="wind">Wind</ToggleButton>
+          </ToggleButtonGroup>
+        </Grid>
 
-      <p></p>
+        <Grid item xs={6}>
+          <FormControl size="small" sx={{ width: '100%' }}>
+            <InputLabel id="input-label-id">Airport</InputLabel>
+            <Select value={selectedAirport} labelId='input-label-id' label='Airport' onChange={handleSelectChange}>
+              <MenuItem value="">-- See all --</MenuItem>
+              {airportMenuItems}
+            </Select>
+          </FormControl>
+        </Grid>
+      </Grid>
 
       {metarElements}
     </Container>
@@ -75,10 +105,6 @@ export default function Metars() {
 }
 
 function getSortFunction(key: OrderBy) {
-
-  // const sortByString = (a: string, b: string) => a.localeCompare(b);
-  // const sortByNumber = (a: number, b: number) => a - b;
-
   return (a: Metar, b: Metar) => {
     switch (key) {
       case 'icao':
