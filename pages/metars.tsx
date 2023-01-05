@@ -56,7 +56,7 @@ export default function Metars() {
       </header>
 
       <div>
-        <p>{observed.toISOString()}</p>
+        <p>{observed.toLocaleString('no')}</p>
 
         <ul>
           {metar.wind && <li>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</li>}
