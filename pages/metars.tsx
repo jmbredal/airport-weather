@@ -37,12 +37,12 @@ export default function Metars() {
   }, [selectedAirport]);
 
   // Airports in the dropdown
-  const airportMenuItems = metars.map(m => {
+  const airportMenuItems = [...metars].sort(sortByName).map(m => {
     return <MenuItem key={m.icao} value={m.icao}>{m.icao}: {m.station.name}</MenuItem>
   });
 
   // All metar cards
-  const metarElements = metars.sort(getSortFunction(orderBy)).map(metar => {
+  const metarElements = [...metars].sort(getSortFunction(orderBy)).map(metar => {
     const clouds = metar.clouds?.map(c => {
       return c.code === 'CAVOK' ? 'No clouds' : `${c.text} ${c.meters} m`
     }).join(', ');
@@ -104,6 +104,10 @@ export default function Metars() {
       {metarElements}
     </Container>
   )
+}
+
+function sortByName(a: Metar, b: Metar): number {
+  return a.station.name.localeCompare(b.station.name, 'no');
 }
 
 function getSortFunction(key: OrderBy) {
