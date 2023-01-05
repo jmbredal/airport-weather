@@ -1,4 +1,4 @@
-import { Card, Container, FormControl, Grid, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { Card, Container, Divider, FormControl, Grid, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
@@ -52,11 +52,13 @@ export default function Metars() {
     return <Card id={metar.icao} className={styles.card} variant='outlined' key={metar.icao}>
       <header className={styles.header}>
         <h1 className={styles.h1}>{metar.icao}</h1>
-        <span>{metar.station.name} ({metar.elevation.meters} m)</span>
+        <span>{metar.station.name}</span>
       </header>
 
+      <Divider />
+
       <div>
-        <p>{observed.toLocaleString('no')}</p>
+        <p>Observed: {observed.toLocaleString('no')}</p>
 
         <ul>
           {metar.wind && <li>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</li>}
@@ -71,7 +73,7 @@ export default function Metars() {
 
   return (
     <Container className={styles.container} maxWidth={'sm'}>
-      <h1>Weather at Norwegian airports</h1>
+      <h1>Norwegian airports weather</h1>
 
       <Grid container spacing={2} mb={1}>
         <Grid item xs={6}>
