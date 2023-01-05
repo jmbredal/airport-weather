@@ -32,7 +32,7 @@ export default function Metars() {
   useEffect(() => {
     if (selectedAirport) {
       const element = document.getElementById(selectedAirport);
-      element?.scrollIntoView({behavior: 'smooth'});
+      element?.scrollIntoView({ behavior: 'smooth' });
     }
   }, [selectedAirport]);
 
@@ -73,7 +73,7 @@ export default function Metars() {
 
   return (
     <Container className={styles.container} maxWidth={'sm'}>
-      <h1>Norwegian airports weather</h1>
+      <h1 style={{ fontSize: '1.8rem' }}>Norwegian airports weather</h1>
 
       <Grid container spacing={2} mb={1}>
         <Grid item xs={6}>
