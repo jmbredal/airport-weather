@@ -17,10 +17,11 @@ export function WindGauge({ windSpeed }: Props) {
     { maxSpeed: 600, minSpeed: 326, label: 'Orkan' },
   ];
 
-  const mainWindStrengthLines = mainWindStrengths.map(w => {
+  const mainWindStrengthLines = mainWindStrengths.map((w, i) => {
     const x = w.minSpeed * 2;
 
     return <line
+      key={i}
       x1={x}
       x2={x}
       y1={height / 4}
@@ -32,10 +33,11 @@ export function WindGauge({ windSpeed }: Props) {
 
   const mainWindStrengthLabels = mainWindStrengths
     .filter(w => w.label !== 'Orkan')
-    .map(w => {
+    .map((w, i) => {
       const x = ((w.maxSpeed - w.minSpeed) / 2) + w.minSpeed;
 
       return <text
+        key={i}
         x={x * 2}
         y={(height / 2) + 2}
         stroke='#333'

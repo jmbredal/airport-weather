@@ -21,10 +21,11 @@ export function TempGauge({ temp }: Props) {
   const viewBox = `0 0 ${width + 20} ${height}`;
 
   const markerTemps = [-30, -20, -10, 0, 10, 20, 30, 40];
-  const tempLines = markerTemps.map(t => {
+  const tempLines = markerTemps.map((t, i) => {
     const x = getX(t);
 
     return <line
+      key={i}
       x1={x}
       x2={x}
       y1={0}
@@ -34,8 +35,9 @@ export function TempGauge({ temp }: Props) {
     />
   });
 
-  const tempLabels = markerTemps.map(t => {
+  const tempLabels = markerTemps.map((t, i) => {
     return <text
+      key={i}
       x={getX(t)}
       y={height - 2}
       textAnchor="middle"
