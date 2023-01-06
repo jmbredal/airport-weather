@@ -49,14 +49,14 @@ export function TempGauge({ temp }: Props) {
       viewBox={viewBox}
     >
       <linearGradient id="GradientLow" x1="0%" x2="100%" y1="0%" y2="0%">
-        <stop offset="0%" stop-color="blue" />
-        <stop offset="100%" stop-color="lightblue" />
+        <stop offset="0%" stopColor="blue" />
+        <stop offset="100%" stopColor="lightblue" />
       </linearGradient>
 
       <linearGradient id="GradientHigh" x1="0%" x2="100%" y1="0%" y2="0%">
-        <stop offset="0%" stop-color="lightgreen" />
-        <stop offset="50%" stop-color="yellow" />
-        <stop offset="100%" stop-color="red" />
+        <stop offset="0%" stopColor="lightgreen" />
+        <stop offset="50%" stopColor="yellow" />
+        <stop offset="100%" stopColor="red" />
       </linearGradient>
 
       <g transform="translate(10 0)">
