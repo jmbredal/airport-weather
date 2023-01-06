@@ -1,5 +1,6 @@
 import { Card, Container, Divider, FormControl, Grid, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { WindGauge } from '../components/WindGauge';
 import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
 import { getMetars } from '../utils/metar-service';
@@ -59,6 +60,12 @@ export default function Metars() {
 
       <div>
         <p>Observed: {observed.toLocaleString('no')}</p>
+
+        {metar.wind &&
+          <div style={{ width: '300px' }}>
+            <WindGauge windSpeed={metar.wind.speed_mps} />
+          </div>
+        }
 
         <ul>
           {metar.wind && <li>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</li>}
