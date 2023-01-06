@@ -8,7 +8,7 @@ export function WindGauge({ windSpeed }: Props) {
   const width = 700;
   const mainLineX = windSpeed * 20;
 
-  const viewBox = `0 0 ${width} ${height}`;
+  const viewBox = `0 0 ${width + 20} ${height}`;
 
   const mainWindStrengths = [
     { maxSpeed: 108, minSpeed: 34, label: 'Bris' },
@@ -49,25 +49,27 @@ export function WindGauge({ windSpeed }: Props) {
     <svg
       viewBox={viewBox}
     >
-      <rect
-        y={height / 4}
-        width={width}
-        height={height / 2}
-        stroke='black'
-        fill='lightgreen'
-      />
+      <g transform="translate(10 0)">
+        <rect
+          y={height / 4}
+          width={width}
+          height={height / 2}
+          stroke='black'
+          fill='lightgreen'
+        />
 
-      {mainWindStrengthLines}
-      {mainWindStrengthLabels}
+        {mainWindStrengthLines}
+        {mainWindStrengthLabels}
 
-      <line
-        x1={mainLineX}
-        x2={mainLineX}
-        y1={0}
-        y2={height}
-        stroke='red'
-        strokeWidth={3}
-      />
+        <line
+          x1={mainLineX}
+          x2={mainLineX}
+          y1={0}
+          y2={height}
+          stroke='red'
+          strokeWidth={3}
+        />
+      </g>
 
     </svg>
   );
