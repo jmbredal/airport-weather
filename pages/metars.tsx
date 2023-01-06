@@ -64,7 +64,7 @@ export default function Metars() {
 
         <div style={{ width: '400px' }}>
           {metar.wind && <WindGauge windSpeed={metar.wind.speed_mps} />}
-          {metar.temperature?.celsius && <TempGauge temp={metar.temperature?.celsius} />}
+          {metar.temperature && <TempGauge temp={metar.temperature.celsius} />}
         </div>
 
         <ul>
