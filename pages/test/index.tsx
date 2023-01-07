@@ -15,9 +15,9 @@ function range(from: number, to: number, step = 1): number[] {
 
 export default function Test() {
 
-  const gauges = range(0, 35).map(ms => {
+  const gauges = range(0, 35).map((ms, index) => {
 
-    return <div style={{ borderBottom: '1px solid black' }}>
+    return <div key={index} style={{ borderBottom: '1px solid black' }}>
       <small>Windspeed {ms} {getWindDescription(ms)}</small>
       <WindGauge windSpeed={ms} />
     </div>

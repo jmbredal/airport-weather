@@ -66,7 +66,7 @@ export default function Metars() {
 
         {metar.wind &&
           <div>
-            <h3 className={styles.h3}>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</h3>
+            <h3 className={styles.h3}>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_mps)})</h3>
             <WindGauge windSpeed={metar.wind.speed_mps} />
           </div>
         }
