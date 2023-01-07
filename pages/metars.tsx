@@ -47,7 +47,7 @@ export default function Metars() {
   // All metar cards
   const metarElements = [...metars].sort(getSortFunction(orderBy)).map(metar => {
     const clouds = metar.clouds?.map(c => {
-      return c.code === 'CAVOK' ? 'No clouds' : `${c.text} ${c.meters} m`
+      return c.code === 'CAVOK' ? 'No clouds' : `${c.text} ${c.meters ? `${c.meters} m` : ''}`
     }).join(', ');
     const observed = new Date(metar.observed);
     const conditions = metar.conditions?.map(c => c.text).join(', ');
