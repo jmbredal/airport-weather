@@ -6,6 +6,7 @@ import { WindGauge } from '../components/WindGauge';
 import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
 import { getMetars } from '../utils/metar-service';
+import { getWindDescription } from '../utils/windspeed';
 
 type OrderBy = 'icao' | 'wind' | 'temp';
 
@@ -150,26 +151,4 @@ function getSortFunction(key: OrderBy) {
         return !a.wind ? 100 : !b.wind ? -100 : b.wind?.speed_mps - a.wind?.speed_mps;
     }
   }
-}
-
-const between = function (n: number, a: number, b: number, inclusive: boolean = true) {
-  const min = Math.min(a, b);
-  const max = Math.max(a, b);
-  return inclusive ? n >= min && n <= max : n > min && n < max;
-}
-
-function getWindDescription(knots: number) {
-  if (knots === 0) return 'Stille vind';
-  if (between(knots, 1, 3)) return 'Flau vind';
-  if (between(knots, 4, 6)) return 'Svak vind';
-  if (between(knots, 7, 10)) return 'Lett bris';
-  if (between(knots, 11, 16)) return 'Laber bris';
-  if (between(knots, 17, 21)) return 'Frisk bris';
-  if (between(knots, 22, 27)) return 'Liten kuling';
-  if (between(knots, 28, 33)) return 'Stiv kuling';
-  if (between(knots, 34, 40)) return 'Sterk kuling';
-  if (between(knots, 41, 47)) return 'Liten storm';
-  if (between(knots, 48, 55)) return 'Full storm';
-  if (between(knots, 56, 63)) return 'Sterk storm';
-  if (knots > 63) return 'Orkan';
 }
