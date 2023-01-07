@@ -1,4 +1,5 @@
-import { Card, Container, Divider, FormControl, Grid, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { Visibility, CloudOutlined } from '@mui/icons-material';
+import { Card, Container, Divider, FormControl, Grid, Icon, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { TempGauge } from '../components/TempGauge';
 import { WindGauge } from '../components/WindGauge';
@@ -62,18 +63,37 @@ export default function Metars() {
       <div>
         <p>Observed: {observed.toLocaleString('no')}</p>
 
-        <div style={{ width: '400px' }}>
-          {metar.wind && <WindGauge windSpeed={metar.wind.speed_mps} />}
-          {metar.temperature && <TempGauge temp={metar.temperature.celsius} />}
-        </div>
+        {metar.wind &&
+          <div>
+            <h3 className={styles.h3}>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</h3>
+            <WindGauge windSpeed={metar.wind.speed_mps} />
+          </div>
+        }
 
-        <ul>
-          {metar.wind && <li>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_kts)})</li>}
-          <li>Temp: {metar.temperature?.celsius}° C</li>
-          <li>Visibility: {metar.visibility?.meters} meter</li>
-          {clouds && <li>Clouds: {clouds}</li>}
-          {conditions && <li>Conditions: {conditions}</li>}
-        </ul>
+        {metar.temperature &&
+          <div>
+            <h3 className={styles.h3}>Temp: {metar.temperature?.celsius}° C</h3>
+            <TempGauge temp={metar.temperature.celsius} />
+          </div>
+        }
+
+        {metar.visibility &&
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Visibility />
+            <span>Visibility: {metar.visibility?.meters} meter</span>
+          </div>
+        }
+
+        {(clouds || conditions) &&
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+            <CloudOutlined />
+            <div>
+              {clouds && <div>Clouds: {clouds}</div>}
+              {conditions && <div>Conditions: {conditions}</div>}
+            </div>
+          </div>
+        }
+
       </div>
     </Card>
   });
