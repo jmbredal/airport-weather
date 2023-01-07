@@ -11,23 +11,24 @@ export function WindGauge({ windSpeed }: Props) {
   const viewBox = `0 0 ${width + 20} ${height}`;
 
   const mainWindStrengths = [
-    { maxSpeed: 108, minSpeed: 34, label: 'Bris' },
-    { maxSpeed: 208, minSpeed: 108, label: 'Kuling' },
-    { maxSpeed: 326, minSpeed: 208, label: 'Storm' },
-    { maxSpeed: 600, minSpeed: 326, label: 'Orkan' },
+    { maxSpeed: 108, minSpeed: 34, label: 'Bris', color: '#2ECC40' },
+    { maxSpeed: 208, minSpeed: 108, label: 'Kuling', color: '#FF851B' },
+    { maxSpeed: 326, minSpeed: 208, label: 'Storm', color: '#FF645C' },
+    { maxSpeed: 350, minSpeed: 326, label: 'Orkan', color: '#B10DC9' },
   ];
 
   const mainWindStrengthLines = mainWindStrengths.map((w, i) => {
     const x = w.minSpeed * 2;
+    const width = (w.maxSpeed - w.minSpeed) * 2;
 
-    return <line
+    return <rect
       key={i}
-      x1={x}
-      x2={x}
-      y1={height / 4}
-      y2={height / 4 * 3}
-      stroke='#333'
-      strokeWidth={1}
+      x={x}
+      width={width}
+      y={height / 4}
+      height={height / 2}
+      fill={w.color}
+      stroke='black'
     />
   });
 
@@ -51,13 +52,14 @@ export function WindGauge({ windSpeed }: Props) {
     <svg
       viewBox={viewBox}
     >
+
       <g transform="translate(10 0)">
         <rect
           y={height / 4}
           width={width}
           height={height / 2}
           stroke='black'
-          fill='lightgreen'
+          fill='#01FF70'
         />
 
         {mainWindStrengthLines}
