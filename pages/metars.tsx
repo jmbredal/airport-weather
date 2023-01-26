@@ -69,9 +69,9 @@ export default function Metars() {
         {metar.wind &&
           <div>
             <div style={{ position: 'relative' }}>
-              <div style={{ width: 50, position: 'absolute', right: 10, top: -15 }}><WindDirection direction={metar.wind?.degrees} /></div>
+              <div style={{ width: 50, position: 'absolute', right: 0, top: -15 }}><WindDirection direction={metar.wind?.degrees} /></div>
               <h3 className={styles.h3}>
-                Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_mps)}) from {metar.wind?.degrees}°
+                Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_mps)})
               </h3>
             </div>
 
