@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import { TempGauge } from "../../components/TempGauge";
+import { WindDirection } from "../../components/WindDirection";
 import { WindGauge } from "../../components/WindGauge";
 import { getWindDescription } from "../../utils/windspeed";
 
@@ -15,6 +16,13 @@ function range(from: number, to: number, step = 1): number[] {
 }
 
 export default function Test() {
+
+  const directions = range(0, 360, 10).map((direction, index) => {
+    return <div key={index} style={{ flex: '0 0 5%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <small>{direction}</small>
+      <WindDirection direction={direction} />
+    </div>
+  });
 
   const gauges = range(0, 35).map((ms, index) => {
     return <div key={index} style={{ borderBottom: '1px solid black' }}>
@@ -32,9 +40,19 @@ export default function Test() {
 
   return (
     <Container maxWidth={'sm'}>
+      <h1>TestPage</h1>
+
+      <h2>Wind direction</h2>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap'}}>
+        {directions}
+      </div>
+
+      <h2>Windgauges</h2>
+
       {gauges}
 
-      <h1>Temps</h1>
+      <h2>Tempgauges</h2>
       {temps}
     </Container>
   );
