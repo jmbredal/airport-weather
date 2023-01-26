@@ -55,9 +55,9 @@ export function TempGauge({ temp }: Props) {
       </linearGradient>
 
       <linearGradient id="GradientHigh" x1="0%" x2="100%" y1="0%" y2="0%">
-        <stop offset="0%" stopColor="lightgreen" />
+        <stop offset="0%" stopColor="#2ECC40" />
         <stop offset="50%" stopColor="yellow" />
-        <stop offset="100%" stopColor="red" />
+        <stop offset="100%" stopColor="#FF645C" />
       </linearGradient>
 
       <g transform="translate(10 0)">
