@@ -103,7 +103,7 @@ export default function Metars() {
   return (
     <>
       <Box mb={3} sx={{ backgroundColor: 'primary.dark' }} padding={2}>
-        <h1 className={styles.h1}>Airport Weather</h1>
+        <h1 className={styles.h1} style={{ color: 'white' }}>Airport Weather</h1>
       </Box>
 
       <Container className={styles.container} maxWidth={'sm'}>
