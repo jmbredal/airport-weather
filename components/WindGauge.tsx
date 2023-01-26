@@ -1,3 +1,4 @@
+import { getIndicatorPath } from "../utils/gauge-utils";
 
 interface Props {
   windSpeed: number;
@@ -65,14 +66,8 @@ export function WindGauge({ windSpeed }: Props) {
         {mainWindStrengthLines}
         {mainWindStrengthLabels}
 
-        <line
-          x1={mainLineX}
-          x2={mainLineX}
-          y1={0}
-          y2={height}
-          stroke='red'
-          strokeWidth={3}
-        />
+        {/* Indicator */}
+        <path d={getIndicatorPath(height, mainLineX)} />
       </g>
 
     </svg>

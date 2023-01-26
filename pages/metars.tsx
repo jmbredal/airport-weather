@@ -1,5 +1,6 @@
-import { Visibility, CloudOutlined } from '@mui/icons-material';
-import { Box, Card, Container, Divider, FormControl, FormLabel, Grid, Icon, InputLabel, MenuItem, Paper, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { CloudOutlined, Visibility } from '@mui/icons-material';
+import { Box, Card, Container, Divider, FormControl, FormLabel, Grid, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { amber } from '@mui/material/colors';
 import { useEffect, useState } from 'react';
 import { TempGauge } from '../components/TempGauge';
 import { WindGauge } from '../components/WindGauge';
@@ -7,8 +8,6 @@ import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
 import { getMetars } from '../utils/metar-service';
 import { getWindDescription } from '../utils/windspeed';
-import { amber } from '@mui/material/colors';
-
 
 type OrderBy = 'icao' | 'wind' | 'temp';
 

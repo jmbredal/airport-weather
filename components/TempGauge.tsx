@@ -1,3 +1,4 @@
+import { getIndicatorPath } from "../utils/gauge-utils";
 
 interface Props {
   temp: number;
@@ -80,14 +81,8 @@ export function TempGauge({ temp }: Props) {
         {tempLabels}
 
         {/* Temp Indicator */}
-        <line
-          x1={mainLineX}
-          x2={mainLineX}
-          y1={0}
-          y2={height}
-          stroke='red'
-          strokeWidth={3}
-        />
+
+        <path d={getIndicatorPath(height, mainLineX)} />
       </g>
 
     </svg>
