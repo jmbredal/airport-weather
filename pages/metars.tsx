@@ -3,6 +3,7 @@ import { Box, Card, Container, Divider, FormControl, FormLabel, Grid, MenuItem, 
 import { amber } from '@mui/material/colors';
 import { useEffect, useState } from 'react';
 import { TempGauge } from '../components/TempGauge';
+import { WindDirection } from '../components/WindDirection';
 import { WindGauge } from '../components/WindGauge';
 import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
@@ -67,7 +68,13 @@ export default function Metars() {
 
         {metar.wind &&
           <div>
-            <h3 className={styles.h3}>Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_mps)}) from {metar.wind?.degrees}°</h3>
+            <div style={{ position: 'relative' }}>
+              <div style={{ width: 50, position: 'absolute', right: 10, top: -15 }}><WindDirection direction={metar.wind?.degrees} /></div>
+              <h3 className={styles.h3}>
+                Wind: {metar.wind?.speed_mps} m/s ({getWindDescription(metar.wind?.speed_mps)}) from {metar.wind?.degrees}°
+              </h3>
+            </div>
+
             <WindGauge windSpeed={metar.wind.speed_mps} />
           </div>
         }
@@ -105,7 +112,7 @@ export default function Metars() {
       <Box mb={3} sx={{ backgroundColor: 'primary.dark' }} padding={2}>
         <header style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <Air fontSize='large' />
-          
+
           <h1 className={styles.h1}>
             Airport Weather
           </h1>

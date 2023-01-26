@@ -1,3 +1,5 @@
+import { green } from '@mui/material/colors';
+
 interface Props {
   direction: number;
 }
@@ -7,6 +9,7 @@ export function WindDirection({ direction }: Props) {
   const width = 100;
   const radius = width / 2;
   const strokeWidth = 5;
+  const color = green[900];
 
   const viewBox = `0 0 ${width} ${height}`;
   const transform = `rotate(${direction - 90} ${radius} ${radius})`;
@@ -17,11 +20,11 @@ export function WindDirection({ direction }: Props) {
     >
 
       <circle cx={radius} cy={radius} r={radius - strokeWidth}
-        fill={'none'} stroke='black' strokeWidth={strokeWidth}
+        fill={'none'} stroke={color} strokeWidth={strokeWidth}
       />
 
       <g transform={transform}>
-        <path d={getArrowPath(radius)} />
+        <path d={getArrowPath(radius)} fill={color} />
       </g>
     </svg>);
 }
