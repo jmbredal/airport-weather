@@ -1,5 +1,5 @@
 import { Visibility, CloudOutlined } from '@mui/icons-material';
-import { Card, Container, Divider, FormControl, Grid, Icon, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { Box, Card, Container, Divider, FormControl, FormLabel, Grid, Icon, InputLabel, MenuItem, Paper, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { TempGauge } from '../components/TempGauge';
 import { WindGauge } from '../components/WindGauge';
@@ -7,6 +7,8 @@ import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
 import { getMetars } from '../utils/metar-service';
 import { getWindDescription } from '../utils/windspeed';
+import { amber } from '@mui/material/colors';
+
 
 type OrderBy = 'icao' | 'wind' | 'temp';
 
@@ -53,7 +55,7 @@ export default function Metars() {
     const observed = new Date(metar.observed);
     const conditions = metar.conditions?.map(c => c.text).join(', ');
 
-    return <Card id={metar.icao} className={styles.card} variant='outlined' key={metar.icao}>
+    return <Card id={metar.icao} key={metar.icao} className={styles.card} variant='outlined' sx={{ backgroundColor: 'primary.main' }}>
       <header className={styles.header}>
         <h1 className={styles.h1}>{metar.icao}</h1>
         <span>{metar.station.name}</span>
@@ -100,39 +102,50 @@ export default function Metars() {
   });
 
   return (
-    <Container className={styles.container} maxWidth={'sm'}>
-      <h1 style={{ fontSize: '1.8rem' }}>Norwegian airports weather</h1>
+    <>
+      <Box mb={3} sx={{ backgroundColor: 'primary.dark' }} padding={2}>
+        <h1 className={styles.h1}>Airport Weather</h1>
+      </Box>
 
-      <Grid container spacing={2} mb={1}>
-        <Grid item xs={6}>
-          <small>Sort: </small>
-          <ToggleButtonGroup
-            color='primary'
-            value={orderBy}
-            exclusive
-            onChange={handleToggleChange}
-            aria-label='Sort'
-            size='small'
-          >
-            <ToggleButton value="icao">Icao</ToggleButton>
-            <ToggleButton value="temp">Temp</ToggleButton>
-            <ToggleButton value="wind">Wind</ToggleButton>
-          </ToggleButtonGroup>
+      <Container className={styles.container} maxWidth={'sm'}>
+        <Grid container spacing={2} mb={1} alignItems={'end'}>
+          <Grid item xs={6}>
+            <FormLabel style={{ color: 'black' }}>Sort</FormLabel>
+            <ToggleButtonGroup
+              className={styles.togglebuttongroup}
+              value={orderBy}
+              exclusive
+              onChange={handleToggleChange}
+              aria-label='Sort'
+              size='small'
+              fullWidth={true}
+              style={{ backgroundColor: amber[500] }}
+            >
+              <ToggleButton value="icao">Icao</ToggleButton>
+              <ToggleButton value="temp">Temp</ToggleButton>
+              <ToggleButton value="wind">Wind</ToggleButton>
+            </ToggleButtonGroup>
+          </Grid>
+
+          <Grid item xs={6}>
+            <FormLabel style={{ color: 'black' }}>Airport</FormLabel>
+            <FormControl size="small" fullWidth={true}>
+              <Select value={selectedAirport}
+                labelId='input-label-id'
+                onChange={handleSelectChange}
+                displayEmpty
+                style={{ backgroundColor: amber[500] }}
+              >
+                <MenuItem value="">All</MenuItem>
+                {airportMenuItems}
+              </Select>
+            </FormControl>
+          </Grid>
         </Grid>
 
-        <Grid item xs={6}>
-          <FormControl size="small" sx={{ width: '100%' }}>
-            <InputLabel id="input-label-id">Airport</InputLabel>
-            <Select value={selectedAirport} labelId='input-label-id' label='Airport' onChange={handleSelectChange}>
-              <MenuItem value="">-- See all --</MenuItem>
-              {airportMenuItems}
-            </Select>
-          </FormControl>
-        </Grid>
-      </Grid>
-
-      {metarElements}
-    </Container>
+        {metarElements}
+      </Container>
+    </>
   )
 }
 
