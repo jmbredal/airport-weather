@@ -1,4 +1,4 @@
-import { CloudOutlined, Visibility } from '@mui/icons-material';
+import { Air, CloudOutlined, Visibility } from '@mui/icons-material';
 import { Box, Card, Container, Divider, FormControl, FormLabel, Grid, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { amber } from '@mui/material/colors';
 import { useEffect, useState } from 'react';
@@ -103,7 +103,13 @@ export default function Metars() {
   return (
     <>
       <Box mb={3} sx={{ backgroundColor: 'primary.dark' }} padding={2}>
-        <h1 className={styles.h1} style={{ color: 'white' }}>Airport Weather</h1>
+        <header style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <Air fontSize='large' />
+          
+          <h1 className={styles.h1}>
+            Airport Weather
+          </h1>
+        </header>
       </Box>
 
       <Container className={styles.container} maxWidth={'sm'}>
