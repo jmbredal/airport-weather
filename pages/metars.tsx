@@ -1,8 +1,9 @@
-import { Air } from '@mui/icons-material';
-import { Box, Container, FormControl, FormLabel, Grid, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup } from '@mui/material';
-import { amber } from '@mui/material/colors';
+import { Container, Grid, SelectChangeEvent } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { MetarComponent } from '../components/MetarComponent';
+import PageHeader from '../components/PageHeader';
+import SelectAirportComponent from '../components/SelectAirportComponent';
+import SortIcaoComponent from '../components/SortIcaoComponent';
 import { Metar } from '../interfaces/metar';
 import styles from '../styles/Metars.module.css';
 import { getMetars } from '../utils/metar-service';
@@ -39,59 +40,21 @@ export default function Metars() {
     }
   }, [selectedAirport]);
 
-  // Airports in the dropdown
-  const airportMenuItems = [...metars].sort(sortByName).map(m => {
-    return <MenuItem key={m.icao} value={m.icao}>{m.icao}: {m.station.name}</MenuItem>
-  });
-
   // All metar cards
   const metarElements = [...metars].sort(getSortFunction(orderBy)).map(metar => <MetarComponent metar={metar} />);
 
   return (
     <>
-      <Box mb={3} sx={{ backgroundColor: 'primary.dark' }} padding={2}>
-        <header style={{ color: 'white', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <Air fontSize='large' />
-
-          <h1 className={styles.h1}>
-            Airport Weather
-          </h1>
-        </header>
-      </Box>
+      <PageHeader />
 
       <Container className={styles.container} maxWidth={'sm'}>
         <Grid container spacing={2} mb={1} alignItems={'end'}>
           <Grid item xs={6}>
-            <FormLabel style={{ color: 'black' }}>Sort</FormLabel>
-            <ToggleButtonGroup
-              className={styles.togglebuttongroup}
-              value={orderBy}
-              exclusive
-              onChange={handleToggleChange}
-              aria-label='Sort'
-              size='small'
-              fullWidth={true}
-              style={{ backgroundColor: amber[500] }}
-            >
-              <ToggleButton value="icao">Icao</ToggleButton>
-              <ToggleButton value="temp">Temp</ToggleButton>
-              <ToggleButton value="wind">Wind</ToggleButton>
-            </ToggleButtonGroup>
+            <SortIcaoComponent onChange={handleToggleChange} orderBy={orderBy} />
           </Grid>
 
           <Grid item xs={6}>
-            <FormLabel style={{ color: 'black' }}>Airport</FormLabel>
-            <FormControl size="small" fullWidth={true}>
-              <Select value={selectedAirport}
-                labelId='input-label-id'
-                onChange={handleSelectChange}
-                displayEmpty
-                style={{ backgroundColor: amber[500] }}
-              >
-                <MenuItem value="">All</MenuItem>
-                {airportMenuItems}
-              </Select>
-            </FormControl>
+            <SelectAirportComponent metars={metars} onChange={handleSelectChange} selectedAirport={selectedAirport} />
           </Grid>
         </Grid>
 
@@ -99,10 +62,6 @@ export default function Metars() {
       </Container>
     </>
   )
-}
-
-function sortByName(a: Metar, b: Metar): number {
-  return a.station.name.localeCompare(b.station.name, 'no');
 }
 
 function getSortFunction(key: OrderBy) {

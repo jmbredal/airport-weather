@@ -1,7 +1,7 @@
 import { CloudOutlined, Visibility } from "@mui/icons-material";
 import { Card, Divider } from "@mui/material";
 import { Metar } from "../interfaces/metar";
-import styles from '../styles/Metar.module.css';
+import styles from '../styles/MetarComponent.module.css';
 import { getWindDescription } from "../utils/windspeed";
 import { TempGauge } from "./TempGauge";
 import { WindDirection } from "./WindDirection";
