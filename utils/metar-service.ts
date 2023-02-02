@@ -1,3 +1,4 @@
+import { Result } from '../interfaces/result';
 import { Metar } from './../interfaces/metar';
 import { airports } from './airport-service';
 
@@ -10,7 +11,7 @@ const thirtyMinutes = 30 * 60 * 1000;
 type Icao = string;
 
 // Fetch all airports and fetch metar data for each
-export async function getMetars(): Promise<Metar[]> {
+export async function getMetars(): Promise<Result<Metar[]>> {
   console.log('getMetars');
 
   // Get time of last fetch from localstorage
@@ -26,17 +27,21 @@ export async function getMetars(): Promise<Metar[]> {
     // or we do not have data in localstorage
     // fetch from checkwx
     const icaos = airports.map(a => a.icao);
-    const metars = await fetchMetarData(chunk(icaos));
-
-    localStorage.setItem(metarsKey, JSON.stringify(metars));
-    localStorage.setItem(timeoflastupdateKey, JSON.stringify(now));
-
-    return metars;
+    try {
+      const metars = await fetchMetarData(chunk(icaos));
+      localStorage.setItem(metarsKey, JSON.stringify(metars));
+      localStorage.setItem(timeoflastupdateKey, JSON.stringify(now));
+  
+      return { ok: true, value: metars };
+    } catch (error: any) {
+      return { ok: false, value: new Error(error.name) };
+    }
   } else {
     console.log('Fetching from localstorage');
     
     // If time of last fetch is less then 30 minutes, use localStorage
-    return JSON.parse(localStorage.getItem(metarsKey)!);
+    const value: Metar[] = JSON.parse(localStorage.getItem(metarsKey)!);
+    return { ok: true, value };
   }
 
 }

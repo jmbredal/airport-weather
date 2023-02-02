@@ -1,4 +1,4 @@
-import { Container, Grid, SelectChangeEvent } from '@mui/material';
+import { Alert, Button, Container, Grid, SelectChangeEvent, Snackbar } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { MetarComponent } from '../components/MetarComponent';
 import PageHeader from '../components/PageHeader';
@@ -16,6 +16,7 @@ export default function Metars() {
   const [metars, setMetars] = useState<Metar[]>([]);
   const [orderBy, setOrderBy] = useState<OrderBy>('icao');
   const [selectedAirport, setSelectedAirport] = useState('');
+  const [isErrorOpen, setIsErrorOpen] = useState(false);
 
   // Handle sort change
   const handleToggleChange = (event: any, value: any) => {
@@ -28,9 +29,26 @@ export default function Metars() {
     setSelectedAirport(icao);
   };
 
+  // Handle snackbar close
+  const handleClose = () => {
+    setIsErrorOpen(false);
+  }
+
+  const updateMetars = () => {
+    setIsErrorOpen(false);
+
+    getMetars().then(result => {
+      if (result.ok) {
+        setMetars(result.value as Metar[]);
+      } else {
+        setIsErrorOpen(true);
+      }
+    });
+  }
+
   useEffect(() => {
     console.log('effect getmetars');
-    getMetars().then(metars => setMetars(metars));
+    updateMetars();
   }, []);
 
   useEffect(() => {
@@ -46,6 +64,12 @@ export default function Metars() {
   return (
     <>
       <PageHeader />
+
+      <Snackbar open={isErrorOpen} onClose={handleClose}>
+        <Alert severity="error" sx={{ width: '100%' }} action={<Button onClick={updateMetars}>Reload metars</Button>}>
+          Error fetching metars
+        </Alert>
+      </Snackbar>
 
       <Container className={styles.container} maxWidth={'sm'}>
         <Grid container spacing={2} mb={1} alignItems={'end'}>
