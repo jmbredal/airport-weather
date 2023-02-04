@@ -1,5 +1,5 @@
 import { CloudOutlined, Visibility } from "@mui/icons-material";
-import { Card, Divider } from "@mui/material";
+import { Card, Divider, Icon } from "@mui/material";
 import { Metar } from "../interfaces/metar";
 import styles from '../styles/MetarComponent.module.css';
 import { getWindDescription } from "../utils/windspeed";
@@ -67,6 +67,12 @@ export function MetarComponent({ metar }: Props) {
           </div>
         }
 
+        {metar.barometer?.hpa &&
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Icon><img className='imageIcon' src="/pressure.svg" /></Icon>
+            <span>Pressure: {metar.barometer.hpa} hPa</span>
+          </div>
+        }
       </div>
     </Card>
   );
