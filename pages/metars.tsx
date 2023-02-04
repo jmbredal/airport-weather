@@ -59,7 +59,7 @@ export default function Metars() {
   }, [selectedAirport]);
 
   // All metar cards
-  const metarElements = [...metars].sort(getSortFunction(orderBy)).map(metar => <MetarComponent metar={metar} />);
+  const metarElements = [...metars].sort(getSortFunction(orderBy)).map(metar => <MetarComponent key={metar.icao} metar={metar} />);
 
   return (
     <>

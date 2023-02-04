@@ -19,7 +19,7 @@ export function MetarComponent({ metar }: Props) {
   const conditions = metar.conditions?.map(c => c.text).join(', ');
 
   return (
-    <Card id={metar.icao} key={metar.icao} className={styles.card} variant='outlined' sx={{ backgroundColor: 'primary.main' }}>
+    <Card id={metar.icao} className={styles.card} variant='outlined' sx={{ backgroundColor: 'primary.main' }}>
       <header className={styles.header}>
         <h1 className={styles.h1}>{metar.icao}</h1>
         <span>{metar.station.name}</span>
@@ -69,7 +69,7 @@ export function MetarComponent({ metar }: Props) {
 
         {metar.barometer?.hpa &&
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <Icon><img className='imageIcon' src="/pressure.svg" /></Icon>
+            <Icon><img alt='' className='imageIcon' src="/pressure.svg" /></Icon>
             <span>Pressure: {metar.barometer.hpa} hPa</span>
           </div>
         }
