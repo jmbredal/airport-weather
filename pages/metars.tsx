@@ -14,6 +14,7 @@ export default function Metars() {
   console.log('Metars render');
 
   const [metars, setMetars] = useState<Metar[]>([]);
+  const [renderedMetars, setRenderedMetars] = useState<Metar[]>([]);
   const [orderBy, setOrderBy] = useState<OrderBy>('icao');
   const [selectedAirport, setSelectedAirport] = useState('');
   const [isErrorOpen, setIsErrorOpen] = useState(false);
@@ -39,7 +40,9 @@ export default function Metars() {
 
     getMetars().then(result => {
       if (result.ok) {
-        setMetars(result.value as Metar[]);
+        const _metars = result.value as Metar[];
+        setMetars(_metars);
+        setRenderedMetars(_metars);
       } else {
         setIsErrorOpen(true);
       }
@@ -52,14 +55,15 @@ export default function Metars() {
   }, []);
 
   useEffect(() => {
-    if (selectedAirport) {
-      const element = document.getElementById(selectedAirport);
-      element?.scrollIntoView({ behavior: 'smooth' });
-    }
+    const metarsToRender = !!selectedAirport 
+      ? (metars.filter(m => m.icao === selectedAirport))
+      : metars;
+    setRenderedMetars(metarsToRender);
   }, [selectedAirport]);
 
-  // All metar cards
-  const metarElements = [...metars].sort(getSortFunction(orderBy)).map(metar => <MetarComponent key={metar.icao} metar={metar} />);
+  const metarElements = [...renderedMetars]
+    .sort(getSortFunction(orderBy))
+    .map(metar => <MetarComponent key={metar.icao} metar={metar} />);
 
   return (
     <>
