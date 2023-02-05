@@ -40,7 +40,7 @@ export const airports: Airport[] = [
   { "icao": "ENLI", "name": "Farsund airport, Lista", "concessionaire": "Lista Lufthavn AS" },
   { "icao": "ENMH", "name": "Mehamn airport", "concessionaire": "Avinor AS" },
   { "icao": "ENML", "name": "Molde airport, Årø", "concessionaire": "Avinor AS" },
-  { "icao": "ENNS", "name": "Mosjøen airport, Kjærstad", "concessionaire": "Avinor AS" },
+  { "icao": "ENMS", "name": "Mosjøen airport, Kjærstad", "concessionaire": "Avinor AS" },
   { "icao": "ENNA", "name": "Lakselv airport, Banak", "concessionaire": "Avinor AS" },
   { "icao": "ENNM", "name": "Namsos airport", "concessionaire": "Avinor AS" },
   { "icao": "ENNO", "name": "Notodden airport", "concessionaire": "Notodden Lufthavn AS" },
@@ -73,5 +73,6 @@ export const airports: Airport[] = [
   { "icao": "ENTY", "name": "Tynset airport", "concessionaire": "Tynset Flyklubb" },
   { "icao": "ENVA", "name": "Trondheim airport, Værnes", "concessionaire": "Avinor AS" },
   { "icao": "ENVD", "name": "Vadsø airport", "concessionaire": "Avinor AS" },
+  { "icao": "ENVR", "name": "Værøy heliport, Værøy", "concessionaire": "Avinor AS" },
   { "icao": "ENZV", "name": "Stavanger airport, Sola", "concessionaire": "Avinor AS" }
 ];
