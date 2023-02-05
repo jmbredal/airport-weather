@@ -69,7 +69,7 @@ export function MetarComponent({ metar }: Props) {
 
         {metar.barometer?.hpa &&
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <Icon><img alt='' className='imageIcon' src="/pressure.svg" /></Icon>
+            <Icon><img alt='' className='imageIcon' src="/aw/pressure.svg" /></Icon>
             <span>Pressure: {metar.barometer.hpa} hPa</span>
           </div>
         }
