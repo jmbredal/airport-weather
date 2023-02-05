@@ -5,23 +5,27 @@ import PageHeader from '../components/PageHeader';
 import SelectAirportComponent from '../components/SelectAirportComponent';
 import SortIcaoComponent from '../components/SortIcaoComponent';
 import { Metar } from '../interfaces/metar';
+import { Order, OrderBy } from '../interfaces/order';
 import styles from '../styles/Metars.module.css';
 import { getMetars } from '../utils/metar-service';
-
-type OrderBy = 'icao' | 'wind' | 'temp';
 
 export default function Metars() {
   console.log('Metars render');
 
   const [metars, setMetars] = useState<Metar[]>([]);
   const [renderedMetars, setRenderedMetars] = useState<Metar[]>([]);
-  const [orderBy, setOrderBy] = useState<OrderBy>('icao');
+  const [order, setOrder] = useState<Order>({ orderBy: 'icao', direction: 'asc' });
   const [selectedAirport, setSelectedAirport] = useState('');
   const [isErrorOpen, setIsErrorOpen] = useState(false);
 
   // Handle sort change
-  const handleToggleChange = (event: any, value: any) => {
-    setOrderBy(value);
+  const handleToggleChange = (event: any, value: OrderBy) => {
+    if (value) {
+      setOrder({ orderBy: value, direction: 'asc' })
+    } else {
+      const direction = order.direction === 'asc' ? 'desc' : 'asc';
+      setOrder({ ...order, direction });
+    }
   }
 
   // Handle selected airport change
@@ -55,14 +59,14 @@ export default function Metars() {
   }, []);
 
   useEffect(() => {
-    const metarsToRender = !!selectedAirport 
+    const metarsToRender = !!selectedAirport
       ? (metars.filter(m => m.icao === selectedAirport))
       : metars;
     setRenderedMetars(metarsToRender);
   }, [selectedAirport]);
 
   const metarElements = [...renderedMetars]
-    .sort(getSortFunction(orderBy))
+    .sort(getSortFunction(order))
     .map(metar => <MetarComponent key={metar.icao} metar={metar} />);
 
   return (
@@ -78,7 +82,7 @@ export default function Metars() {
       <Container className={styles.container} maxWidth={'sm'}>
         <Grid container spacing={2} mb={1} alignItems={'end'}>
           <Grid item xs={6}>
-            <SortIcaoComponent onChange={handleToggleChange} orderBy={orderBy} />
+            <SortIcaoComponent onChange={handleToggleChange} order={order} />
           </Grid>
 
           <Grid item xs={6}>
@@ -92,15 +96,21 @@ export default function Metars() {
   )
 }
 
-function getSortFunction(key: OrderBy) {
+function getSortFunction(order: Order) {
   return (a: Metar, b: Metar) => {
-    switch (key) {
+    switch (order.orderBy) {
       case 'icao':
-        return a.icao.localeCompare(b.icao);
+        return order.direction === 'asc' 
+          ? a.icao.localeCompare(b.icao) 
+          : b.icao.localeCompare(a.icao);
       case 'temp':
-        return !a.temperature ? 100 : !b.temperature ? -100 : a.temperature?.celsius - b.temperature.celsius;
+        return order.direction === 'asc' 
+          ? !a.temperature ? 100 : !b.temperature ? -100 : a.temperature?.celsius - b.temperature.celsius
+          : !a.temperature ? 100 : !b.temperature ? -100 : b.temperature?.celsius - a.temperature.celsius;
       case 'wind':
-        return !a.wind ? 100 : !b.wind ? -100 : b.wind?.speed_mps - a.wind?.speed_mps;
+        return order.direction === 'asc' 
+          ? !a.wind ? 100 : !b.wind ? -100 : a.wind?.speed_mps - b.wind?.speed_mps
+          : !a.wind ? 100 : !b.wind ? -100 : b.wind?.speed_mps - a.wind?.speed_mps
     }
   }
 }
