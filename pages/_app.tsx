@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
           <Box bgcolor={green[900]} padding={2} textAlign='center'>
             <footer>
-              <Link href="mailto:bredal@jmmi.no" underline='hover' variant='body1' color={'#78dc7c'}>John-Magne Bredal</Link>
+              <Link href="mailto:bredal+airportweather@jmmi.no" underline='hover' variant='body1' color={'#78dc7c'}>John-Magne Bredal</Link>
             </footer>
           </Box>
         </ThemeProvider>
