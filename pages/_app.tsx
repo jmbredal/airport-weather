@@ -15,10 +15,10 @@ const roboto = Roboto({
 const theme = createTheme({
   palette: {
     background: {
-      default: green[200],
+      default: green[400],
     },
     primary: {
-      main: green[400],
+      main: green[200],
     },
     secondary: {
       main: amber[400],
